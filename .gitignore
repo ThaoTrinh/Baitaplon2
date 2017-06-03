@@ -1,3 +1,6 @@
+# file nay dung de bo cac file khong can thiet khi push
+# nhung file nay hoac folder phai chua co mat trong repo chinh
+
 # Prerequisites
 *.d
 
@@ -30,3 +33,7 @@
 *.exe
 *.out
 *.app
+
+
+# thiet lap rieng cua Khoa
+/build
