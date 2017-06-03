@@ -1,0 +1,8 @@
+0 |hoten|CMND|namsinh|gioitinh|diachi|truong|khoa
+1 |Trinh Thi Thu Thao|221460076|1998|nu|Phu Yen|Bach Khoa|May tinh|
+2 |anhkhoa|1234567|1998|nam|govap|bk|mt|
+3 |thao|36327453|1998|nu|py|bk|mt|
+4 |thuan|726373874|1998|nam|bd|bk|mt|
+5 |hao|3733346|1998|nam|bd|bk|mt|
+6|trinh nhat hoa|374374|2005|nam|py|nht|cap2|
+7|nguyen anh khoa|3234353|1998|nam|go vap|bk|mt|
