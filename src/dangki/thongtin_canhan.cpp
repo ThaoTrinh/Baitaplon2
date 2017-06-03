@@ -16,9 +16,6 @@ bool Thongtin_canhan(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 	int vitri[9];
 	string bien2, bien3, bien4,bien5, bien6;
 
-	// đặt tên đàng hoàng đi, không có mất gì đâu
-	// đọc thế này ai biết biến 1, 2, 3, 3, 4, 5, 6 là gì?
-
 	while(getline(FILE,bien)){
 		if(bien.empty())
 			continue;

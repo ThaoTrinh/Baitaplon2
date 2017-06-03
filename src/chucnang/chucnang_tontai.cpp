@@ -8,9 +8,10 @@ bool chucnang_tontai(Nguoidung& Ngdung_dangnhap, int chon){
 		chon == Ngdung_dangnhap.ngdung.thuthu ||
 		chon == Ngdung_dangnhap.ngdung.quanli)
 	{
-		cout << "Chuc nang nay ban da co" << endl;
+		
 		return true;
 
 	}
 	return false;
 }
+

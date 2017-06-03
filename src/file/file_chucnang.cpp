@@ -1,5 +1,6 @@
 #include <file_chucnang.h>
 #include <Capnhat_file.h>
+#include <biethieu.h>
 using namespace std;
 
 bool file_themchucnang(){
@@ -28,28 +29,9 @@ bool file_themchucnang(){
 	int bien1, bien2;
 	tach>>bien1>>bien2;
 
-
+	//biethieu
 	
-	fstream file("dangnhap.txt");
-	if (!file.is_open()){
-		cout << "Loi mo file";
-		return false;
-	}
-
-	string chuoi;
-	while(getline(file,chuoi)){
-		if(chuoi.empty()) continue;
-
-		stringstream tachbien(chuoi);
-		int mso;
-		string tk,mk, bhieu;
-		tachbien>>mso>>tk>>mk>>bhieu;
-		if(mso!=bien1) continue;
-		else{
-			cout<<bhieu;
-		}
-	}
-
+	biethieu(bien1);
 
 		cout<<"	muon them chuc nang: ";
 		if(bien2==1) cout<<"doc gia"<<endl;
@@ -163,7 +145,7 @@ bool file_themchucnang(){
 
 			
 			nhap.close();
-			file.close();
+			//file.close();
 			FILE.close();
 			return true;
 
@@ -196,25 +178,7 @@ bool file_huychucnang(){
 
 
 	
-	fstream file("dangnhap.txt");
-	if (!file.is_open()){
-		cout << "Loi mo file";
-		return false;
-	}
-
-	string chuoi;
-	while(getline(file,chuoi)){
-		if(chuoi.empty()) continue;
-
-		stringstream tachbien(chuoi);
-		int mso;
-		string tk,mk, bhieu;
-		tachbien>>mso>>tk>>mk>>bhieu;
-		if(mso!=bien1) continue;
-		else{
-			cout<<bhieu;
-		}
-	}
+	biethieu(bien1);
 
 
 		cout<<"	muon huy chuc nang: ";
@@ -330,7 +294,7 @@ bool file_huychucnang(){
 
 			
 			nhap.close();
-			file.close();
+			//file.close();
 			FILE.close();
 			return true;
 
@@ -352,3 +316,21 @@ bool capnhat_themchucnang(Nguoidung& Ngdung_dangnhap, int chon){
 	// chỗ này để kiem = true chi? gì cũng return mà?
 	return true;
 }
+
+bool capnhat_huychucnang(Nguoidung& Ngdung_dangnhap, int chon){
+	fstream FILE("huychucnang.txt");
+	if(!FILE.is_open()){
+		cout<<"loi mo file"<<endl;
+		return false;
+	}
+
+	FILE<<Ngdung_dangnhap.Maso<<" "<<chon;
+
+	FILE.close();
+	cout << "Yeu cau da duoc ghi lai"<<endl;
+	system("pause");
+	// kiem = true;
+	// chỗ này để kiem = true chi? gì cũng return mà?
+	return true;
+}
+

@@ -85,7 +85,7 @@ bool Chucnang_dangki(vector<thongtin_nguoidung>& Dangki_taikhoan, Nguoidung& Ngd
 	}
 	int dodai = Dangnhap.size();
 	FILE<<endl;
-	FILE << Dangnhap[dodai - 2].Maso + 1<<"      " << "1       0       0";
+	FILE << Dangnhap[dodai - 2].Maso + 1<<"   " << "1    0   0";
 	FILE.close();
 	return true;
 }

@@ -1,5 +1,5 @@
 #include <Capnhat_file.h>
-
+#include <mo_file.h>
 using namespace std;
 
 bool capnhat_doimatkhau(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
@@ -10,12 +10,12 @@ bool capnhat_doimatkhau(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap)
 		return false;
 	}
 
+	///mofiletrong
 	fstream Nhap("trong.txt");
 	if (!Nhap.is_open()) {
 		cout << "Loi mo file";
 		return false;
 	}
-
 
 	string bien;
 	while (getline(FILE, bien)) {
