@@ -38,3 +38,4 @@
 # thiet lap rieng cua Khoa
 /build
 /.vscode
+**/CMakeLists.txt
