@@ -48,10 +48,12 @@ void HienThiDanhSachCacLoaiSach() {
 	}
 	switch (int(luachon))
 	{
+
 	case 1:
 	{
 		//code tìm kiếm theo từ khóa
 		break;
+
 	}
 hienthi:case 2:
 {
@@ -62,6 +64,7 @@ hienthi:case 2:
 	cout << "3. Khoa hoc tu nhien va ki thuat." << endl;
 	cout << "4. Quay lai." << endl;
 	cout << "Moi ban chon the loai de hien thi danh sach cac loai sach: ";
+
 	cin >> luachon_theloai;
 	while (luachon_theloai < 0 || int(luachon_theloai) != luachon_theloai || luachon_theloai > 4)
 	{
