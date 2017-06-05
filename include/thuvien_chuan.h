@@ -10,6 +10,8 @@
 #include <vector>
 #include <ctime>
 #include <limits>
+#include <conio.h>
+#include <iomanip>
 
 extern bool kiemtra;
 extern bool tuychinh;
