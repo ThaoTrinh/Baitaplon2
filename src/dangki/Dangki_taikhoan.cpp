@@ -55,6 +55,8 @@ bool thongtin_dangki(
 	thongtin_nguoidung A;
 	cout << "Ho va ten: ";
 	getline(cin, A.hoten);
+	cout<<"Ma so sinh vien/nhan vien: ";
+	getline(cin,A.MSSV);
 	cout<<"Nhap so CMND: ";
 	getline(cin, A.CMND);
 	cout << "Nam sinh: ";
@@ -63,16 +65,20 @@ bool thongtin_dangki(
 	getline(cin, A.gioitinh);
 	cout << "Dia chi: ";
 	getline(cin, A.diachi);
+	cout<<"Nghe nghiep: ";
+	getline(cin,A.nghenghiep);
 	cout << "Truong: ";
 	getline(cin, A.truong);
 	cout << "Khoa: ";
 	getline(cin, A.khoa);
+	cout<<"Email: ";
+	getline(cin,A.email);
 
 	Dangki_taikhoan.push_back(A);
 
 	FILE << endl;
-	FILE << Dangnhap[dodai - 2].Maso + 1 << "|" << A.hoten <<"|"<<A.CMND<< "|" << A.namsinh
-	     <<"|"<<A.gioitinh<< "|" << A.diachi << "|" << A.truong << "|" << A.khoa<<"|";
+	FILE << Dangnhap[dodai - 2].Maso + 1 << "|" << A.hoten <<"|"<<A.MSSV<<"|"<<A.CMND<< "|" << A.namsinh
+		<<"|"<<A.gioitinh<< "|" << A.diachi << "|"<<A.nghenghiep<<"|" << A.truong << "|" << A.khoa<<"|"<<A.email<<"|";
 	FILE.close();
 	return true;
 }

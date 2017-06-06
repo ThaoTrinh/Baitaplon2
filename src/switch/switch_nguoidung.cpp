@@ -5,6 +5,7 @@
 #include <thongtin_canhan.h>
 #include <switch.h>
 #include <file_chucnang.h>
+#include <timkiem_nguoidung.h>
 
 using namespace std;
 
@@ -20,99 +21,103 @@ void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 	// nên gọi hàm switch ở trên
 	///// từ đó mới hiện lại màn hình chọn chức năng
 
-	switch(Tuychon_docgia(Dangnhap,Ngdung_dangnhap)){
-		case 1:
-			Switch_timkiem();
-			break;
-		case 2: 
-			 Nhapphieumuonsach();
-			break;
-		case 3:break;
-		case 4:{
-			if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
-				cout<<"Khong tim thay thong tin"<<endl;	
-				system("pause");
+	while(true) {
+		switch(Tuychon_docgia(Dangnhap,Ngdung_dangnhap)){
+			case 1:
+				Switch_timkiem();
+				break;
+			case 2: 
+				Nhapphieumuonsach();
+				break;
+			case 3:break;
+			case 4:{
+				if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
+					cout<<"Khong tim thay thong tin"<<endl;	
+					system("pause");
+				}
+				break;
 			}
-			break;
-		}
-		case 5:break;
-		case 6:
-			Caidat_switch(Dangnhap,Ngdung_dangnhap);
-			break;
-		case 7:
-			//system("pause");
-			return;
-	}// switch
+			case 5:break;
+			case 6:
+				Caidat_switch(Dangnhap,Ngdung_dangnhap);
+				break;
+			case 7:
+				//system("pause");
+				return;
+		}// switch
+	}
 }// đóng hàm
 
 void Switch_thuthu(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
-	switch(Tuychon_thuthu(Dangnhap,Ngdung_dangnhap)){
-		case 1:
-			
-			break;
-		case 2:
-			
-			break;
-		case 3:
-			break;
-		case 4:
-			break;
-		case 5:
-			break;
-		case 6:
-			break;
-		case 7:
-			break;
-		case 8:
-			Caidat_switch(Dangnhap,Ngdung_dangnhap);
-			break;
-		case 9:{
-			if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
-				cout<<"Khong tim thay thong tin"<<endl;	
+
+	while(true) {		
+		switch(Tuychon_thuthu(Dangnhap,Ngdung_dangnhap)){
+			case 1:
+				
 				break;
-			}
-			else {
-				system("pause");
+			case 2:
+				
 				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5:
+				break;
+			case 6:
+				break;
+			case 7:
+				break;
+			case 8:
+				Caidat_switch(Dangnhap,Ngdung_dangnhap);
+				break;
+			case 9:{
+				if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
+					cout<<"Khong tim thay thong tin"<<endl;	
+				}
+					break;
 			}
+			case 10:
+				return ;
 		}
-		case 10:
-			return ;
 	}
 }
 
 void Switch_quanli(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
-	switch(Tuychon_Quanli(Dangnhap,Ngdung_dangnhap)){
-	case 1:
-		if(!file_themchucnang()){
-			cout<<"Loi chuc nang"<<endl;
-		}
-		
-		break;
-	case 2:
-		if(!file_huychucnang()){
-			cout<<"Loi chuc nang"<<endl;
-		}
-		//file_huychucnang();
-		break;
-	case 3:
-		break;
-	case 4:
-		Caidat_switch(Dangnhap,Ngdung_dangnhap);
-		break;
-	case 5:{
-		if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
-			cout<<"Khong tim thay thong tin"<<endl;	
+
+	while (true) {
+		switch(Tuychon_Quanli(Dangnhap,Ngdung_dangnhap)){
+		case 1:
+			if(!file_themchucnang()){
+				cout<<"Loi chuc nang"<<endl;
+			}
+			
+			break;
+		case 2:
+			if(!file_huychucnang()){
+				cout<<"Loi chuc nang"<<endl;
+			}
+			//file_huychucnang();
+			break;
+		case 3:
+			break;
+		case 4:
+			Caidat_switch(Dangnhap,Ngdung_dangnhap);
+			break;
+		case 5:{
+			if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
+				cout<<"Khong tim thay thong tin"<<endl;	
+			}
 			break;
 		}
-		else {
-			system("pause");
+		case 6:
+			/*cin.ignore();
+			if(!timnguoidung()){
+				cout<<"Khong the lay du lieu"<<endl;
+			}*/
 			break;
+		case 7:
+			return ;
 		}
 	}
-
-	case 6:
-		return ;
-	}
-
 }

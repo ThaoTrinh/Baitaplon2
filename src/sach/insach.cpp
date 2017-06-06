@@ -13,18 +13,17 @@ void InDanhSach_Sach_TacGia(string str, int bien) {
 		}
 	}
 	cout << bien << "\t";
-	char ten_sach[200];
+	string ten_sach;
 	for (int i = index[0] + 1; i < index[1]; i++) {
-		ten_sach[i] = str[i];
-		cout << ten_sach[i];
+		ten_sach += str[i];
 	}
-	cout << "				";
-	char tac_gia[200];
+	cout<<ten_sach;
+	string tac_gia;
 	for (int i = index[1] + 1; i < index[2]; i++) {
-		tac_gia[i] = str[i];
-		cout << tac_gia[i];
+		tac_gia += str[i];
+		
 	}
-	cout << endl;
+	cout <<setfill(' ')<<setw(70-ten_sach.length())<<tac_gia<<endl;
 }
 
 bool infilevanhoc(){

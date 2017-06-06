@@ -10,6 +10,7 @@
 #include <vector>
 #include <ctime>
 #include <limits>
+#include <iomanip>
 
 extern bool kiemtra;
 extern bool tuychinh;
@@ -32,10 +33,13 @@ typedef struct{
 typedef struct{
 	int maso;
 	std::string hoten;
+	std::string MSSV;
+	std::string CMND;
+	std::string nghenghiep;
 	std::string namsinh;
 	std::string diachi;
 	std::string truong;
-	std::string CMND;
+	std::string email;
 	std::string gioitinh;
 	std::string khoa;
 } thongtin_nguoidung;

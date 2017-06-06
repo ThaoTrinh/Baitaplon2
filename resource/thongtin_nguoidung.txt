@@ -1,9 +1,10 @@
-0 |hoten|CMND|namsinh|gioitinh|diachi|truong|khoa
-1 |Trinh Thi Thu Thao|221460076|1998|nu|Phu Yen|Bach Khoa|May tinh|
-2 |anhkhoa|1234567|1998|nam|govap|bk|mt|
-3 |thao|36327453|1998|nu|py|bk|mt|
-4 |thuan|726373874|1998|nam|bd|bk|mt|
-5 |hao|3733346|1998|nam|bd|bk|mt|
-6|trinh nhat hoa|374374|2005|nam|py|nht|cap2|
-7|nguyen anh khoa|3234353|1998|nam|go vap|bk|mt|
-8|hvan|34823478|1998|nu|py|bk|mt|
+0 |hoten|CMND|namsinh|gioitinh|diachi|truong|khoa|
+1 |Trinh Thi Thu Thao|1613232|221460076|1998|nu|Phu Yen|sinh vien|Bach Khoa|May tinh|thaotrinhpy98|
+2 |anhkhoa|1611617|1234567|1998|nam|govap|sinh vien|bk|mt|anhkhoa.123|
+3 |thao|1613232|36327453|1998|nu|py|sinh vien|bk|mt|thaotrinhpy98|
+4 |thuan|1613426|726373874|1998|nam|bd|sinh vien|bk|mt|quangthuan98|
+5 |hao|1614567|3733346|1998|nam|bd|sinh vien|bk|mt|luonghao98|
+6|trinh nhat hoa|1613231|374374|2005|nam|py|hoc sinh|nht|cap2|nhathoa2005|
+7|nguyen anh khoa|1611617|3234353|1998|nam|go vap|sinh vien|bk|mt|anhkhoa98|
+8|hvan|1612354|34823478|1998|nu|py|isinhvien|bk|mt|hongvan98|
+9|duong ngoc ha|1614523|221460098|1998|nu|phu yen|sinh vien|bach khoa|may tinh|ngocha@gmail.com|
