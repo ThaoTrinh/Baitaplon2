@@ -37,5 +37,6 @@
 
 # thiet lap rieng cua Khoa
 /build
+/khoa
 /.vscode
 **/CMakeLists.txt
