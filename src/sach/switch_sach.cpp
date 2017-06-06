@@ -1,6 +1,7 @@
 #include <switch_sach.h>
 #include <insach.h>
 #include <tuychonsach.h>
+#include <timsach.h>
 
 using namespace std;
 
@@ -34,6 +35,8 @@ void Switch_timkiem(){
 	while(true){
 		switch(timkiem()){
 			case 1:
+				//timsach();
+				timsach_theoten();
 				break;
 			case 2:
 				//tuychoninsach();

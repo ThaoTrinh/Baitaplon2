@@ -143,7 +143,7 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			// nên sẽ chạy lại màn hình chính
 
 			// tao hàm?
-			time_t now = time(0);
+			/*time_t now = time(0);
 			localtime(&now);
 			char* dangxuat = ctime(&now);
 
@@ -155,7 +155,7 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			}
 			file<<Ngdung_dangnhap.Maso<<"	"<<"0	"<<dangxuat;
 
-			file.close();
+			file.close();*/
 			return; 
 	}// hết switch
 }// hết hàm
