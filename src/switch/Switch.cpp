@@ -162,6 +162,8 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			// tao hàm?
 			time_t now = time(0);
 			//localtime(&now);
+			/*time_t now = time(0);
+			localtime(&now);
 			char* dangxuat = ctime(&now);
 
 				
@@ -172,7 +174,7 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			}
 			file<<Ngdung_dangnhap.Maso<<"	"<<"0	"<<dangxuat;
 
-			file.close();
+			file.close();*/
 			return; 
 	}// hết switch
 }// hết hàm
