@@ -4,6 +4,7 @@
 #include <lichsu_dangnhap.h>
 #include <tuychon.h>
 #include <switch_nguoidung.h>
+#include <vohieuhoa.h>
 
 using namespace std;
 
@@ -13,7 +14,6 @@ int Caidat(){
 	cout<<"Moi ban chon tuy chon: "<<endl;
 	cout<<"1.	Them chuc nang"<<endl;
 	cout<<"2.	Huy chuc nang"<<endl;
-	//cout<<"3.	Them tai khoan"<<endl;
 	cout<<"3.	Doi mat khau"<<endl;
 	cout<<"4.	Quay lai"<<endl;
 
@@ -44,8 +44,6 @@ void Caidat_switch(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap){
 				cin.ignore();
 				if(!Doimatkhau(Dangnhap,Ngdung_dangnhap))
 					tuychinh=false;
-				// cả if và else đều break 
-				// thì sao không để ngoài
 				break;
 			case 4:
 				//quay lại cái switch ở trên
@@ -67,6 +65,8 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 		// mà hàm này không thay đổi tùy chỉnh
 		// thì khi vào switch 
 		// break và return như nhau???
+
+		// code chỗ này giống nhau
 
 		// Độc giả
 		case 1:{
@@ -137,14 +137,31 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			break;
 
 		// đăng xuất
-		case 5:
+		case 5: {
+			cout<<"Neu vo hieu hoa tai khoan ban khong the truy cap bat ki tuy chon nao"<<endl;
+			cout<<"Ban muon vo hieu hoa tai khoan? (y/n)"<<endl;
+			cin.ignore();
+			string y;
+			cin>>y;
+			if(y=="y"){
+				if(!vohieuhoa(Ngdung_dangnhap)){
+					cout<<"Khong thuc hien duoc chuc nang nay"<<endl;
+				}
+				cout<<"Ban da vo hieu hoa tao khoan thanh cong"<<endl;
+			}
+			system("pause");
+			kiemtra=false;
+			return;
+			break;
+		}
+		case 6:
 			kiemtra=false;
 			// nên hàm while sẽ chạy if (!kiemtra)
 			// nên sẽ chạy lại màn hình chính
 
 			// tao hàm?
 			time_t now = time(0);
-			localtime(&now);
+			//localtime(&now);
 			char* dangxuat = ctime(&now);
 
 				

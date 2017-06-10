@@ -76,9 +76,11 @@ int Tuychon_chucnang(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	cout<<"Ban muon dang nhap voi tu cach la: "<<endl;
 	cout<<"1.	Doc gia"<<endl;
 	cout<<"2.	Thu thu"<<endl;
-	cout<<"3.	Quan li nguoi dung"<<endl;
+	cout<<"3.	Quan li nguoi dung"<<endl<<endl;
+	cout<<"Hoac ban muon chon tuy chon nao"<<endl;
 	cout<<"4.	Lich su dang nhap"<<endl;
-	cout<<"5.	Dangxuat"<<endl;
+	cout<<"5.	Vo hieu hoa tai khoan"<<endl;
+	cout<<"6.	Dang xuat"<<endl;
 	cout<<"Lua chon cua ban la: ";
 	int chon;
 	cin>>chon;

@@ -31,7 +31,7 @@ void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 				break;
 			case 3:break;
 			case 4:{
-				if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
+				if(!Thongtin_canhan(Ngdung_dangnhap.Maso)){
 					cout<<"Khong tim thay thong tin"<<endl;	
 					system("pause");
 				}
@@ -72,7 +72,7 @@ void Switch_thuthu(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 				Caidat_switch(Dangnhap,Ngdung_dangnhap);
 				break;
 			case 9:{
-				if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
+				if(!Thongtin_canhan(Ngdung_dangnhap.Maso)){
 					cout<<"Khong tim thay thong tin"<<endl;	
 				}
 					break;
@@ -105,16 +105,16 @@ void Switch_quanli(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 			Caidat_switch(Dangnhap,Ngdung_dangnhap);
 			break;
 		case 5:{
-			if(!Thongtin_canhan(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap)){
+			if(!Thongtin_canhan(Ngdung_dangnhap.Maso)){
 				cout<<"Khong tim thay thong tin"<<endl;	
 			}
 			break;
 		}
 		case 6:
-			/*cin.ignore();
+			cin.ignore();
 			if(!timnguoidung()){
 				cout<<"Khong the lay du lieu"<<endl;
-			}*/
+			}
 			break;
 		case 7:
 			return ;

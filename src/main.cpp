@@ -10,7 +10,7 @@
 #include <tuychon.h>
 #include <Dangki_taikhoan.h>
 #include <Doi_matkhau.h>
-
+#include <vohieuhoa.h>
 using namespace std;
 
 
@@ -39,6 +39,8 @@ int main() {
 				case 1:
 					cin.ignore();
 					Dangnhapvao(Dangnhap,Ngdung_dangnhap);
+					
+					davohieuhoa(Ngdung_dangnhap);
 					break;
 
 				// dang ky

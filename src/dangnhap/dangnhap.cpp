@@ -1,5 +1,6 @@
 #include <dangnhap.h>
 #include <Docdulieu.h>
+#include <vohieuhoa.h>
 using namespace std;
 
 bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
@@ -26,7 +27,7 @@ bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 
 				//ghi lai thoi gian dang nhap
 				time_t now = time(0);
-				localtime(&now);
+				//localtime(&now);
 				char* dangnhap = ctime(&now);
 
 				// tao ham void?
@@ -50,10 +51,11 @@ bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 }
 
 void Dangnhapvao(vector<Nguoidung> &Dangnhap, Nguoidung &Ngdung_dangnhap){
+	int dem=0;
 	while (!kiemtra) {
 		kiemtra = Log_in(Dangnhap, Ngdung_dangnhap);
 		if (!kiemtra) {    
-
+			dem++;
 			cout << "Khong hop le ban co muon thu lai hay "
 					"khong?(y/n) "
 					<< endl;
@@ -63,6 +65,7 @@ void Dangnhapvao(vector<Nguoidung> &Dangnhap, Nguoidung &Ngdung_dangnhap){
 				continue;
 			return ;
 		}
+		
 		if (!Dulieu_chucnang(Dangnhap, Ngdung_dangnhap)) {
 			cout << "Vai tro cua ban khong hop le";
 			system("pause");

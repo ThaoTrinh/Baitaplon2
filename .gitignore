@@ -36,7 +36,7 @@
 
 # nghi la can thiet 
 **/lichsu_dangnhap.txt # vì nó thay đổi mỗi lần đăng nhập, không cần push lên
-/bin # thư mục chứa file xuất ra
+/bin/* # thư mục chứa file xuất ra
 
 # thiet lap rieng cua Khoa
 /build
