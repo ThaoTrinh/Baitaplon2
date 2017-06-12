@@ -16,6 +16,7 @@ bool timnguoidung(){// không bị lỗi nếu release VS 10
 	}
 
 	string bien;
+	bool timthay = false;
 	while(getline(file,bien)){
 
 		if (bien.empty())
@@ -44,17 +45,17 @@ bool timnguoidung(){// không bị lỗi nếu release VS 10
 		int maso;
 		if(ten==hoten){
 			maso=so;
-			
+			timthay = true;
 		}
 		else continue;
-		//cout<<maso;
-		//cin.ignore();
-		/*if(!laythongtin(maso)){
-			cout<<"Khong tim thay nguoi dung"<<endl;
-		}*/
-		Thongtin_canhan(maso);
 		cout<<endl;
 	}
+
+	if (!timthay) {
+		cout<<"Khong tim thay thong tin nguoi dung"<<endl;
+		system("pause");
+	}
+
 		file.close();
 		//system("pause");
 		return true;

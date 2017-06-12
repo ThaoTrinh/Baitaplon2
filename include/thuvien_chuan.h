@@ -15,7 +15,7 @@
 
 extern bool kiemtra;
 extern bool tuychinh;
-
+//extern int nhapvao;
 
 typedef struct{
 	int docgia;
@@ -53,5 +53,8 @@ typedef struct{
 	Chucnang ngdung;
 } NguoidungDangnhap;
 
-
+typedef struct{
+	int maso;
+	std::string tensach;
+}sach;
 #endif

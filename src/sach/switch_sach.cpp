@@ -5,13 +5,13 @@
 
 using namespace std;
 
-void switchinsach(){
+void switchinsach(Nguoidung &Ngdung_dangnhap,vector<string>SachGiaoTrinh,sach &Giaotrinh){
 	system("cls");
 
 	while(true){
 		switch(tuychoninsach()){
 		case 1:
-			if(!infilegiaotrinh())
+			if(!infilegiaotrinh(Ngdung_dangnhap,SachGiaoTrinh,Giaotrinh))
 				cout<<"Khong the in"<<endl;
 			break;
 		case 2:
@@ -30,7 +30,7 @@ void switchinsach(){
 	}
 }
 
-void Switch_timkiem(){
+void Switch_timkiem(Nguoidung &Ngdung_dangnhap,vector<string>SachGiaoTrinh,sach & Giaotrinh){
 	system("cls");
 	while(true){
 		switch(timkiem()){
@@ -40,7 +40,7 @@ void Switch_timkiem(){
 				break;
 			case 2:
 				//tuychoninsach();
-				switchinsach();
+				switchinsach(Ngdung_dangnhap,SachGiaoTrinh,Giaotrinh);
 				break;
 			case 3:
 				return;

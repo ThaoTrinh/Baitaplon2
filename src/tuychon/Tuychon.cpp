@@ -13,7 +13,14 @@ int Tuychon(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 
 	int luachon;
 	cin>>luachon;
+	while (!cin)
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Loi nhap lua chon. Vui long nhap lai: ";
+		cin >> luachon;
 
+	}
 	return luachon;
 }
 
@@ -30,6 +37,14 @@ int Tuychon_docgia(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	cout<<"Lua chon cua ban la: ";
 	int chon;
 	cin>>chon;
+	while (!cin)
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Loi nhap lua chon. Vui long nhap lai: ";
+		cin >> chon;
+
+	}
 	return chon;
 }
 
@@ -49,7 +64,14 @@ int Tuychon_thuthu(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	cout<<"Lua chon cua ban la: ";
 	int chon;
 	cin>>chon;
+	while (!cin)
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Loi nhap lua chon. Vui long nhap lai: ";
+		cin >> chon;
 
+	}
 	return chon;
 }
 
@@ -66,7 +88,14 @@ int Tuychon_Quanli(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	cout<<"Lua chon cua ban la: ";
 	int chon;
 	cin>>chon;
+	while (!cin)
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Loi nhap lua chon. Vui long nhap lai: ";
+		cin >> chon;
 
+	}
 	return chon;
 }
 
@@ -84,6 +113,13 @@ int Tuychon_chucnang(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	cout<<"Lua chon cua ban la: ";
 	int chon;
 	cin>>chon;
+	while (!cin)
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Loi nhap lua chon. Vui long nhap lai: ";
+		cin >> chon;
 
+	}
 	return chon;
 }

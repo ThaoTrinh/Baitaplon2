@@ -20,6 +20,14 @@ int Caidat(){
 	cout<<"Lua chon cua ban la: ";
 	int chon;
 	cin>>chon;
+	while (!cin)
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Loi nhap lua chon. Vui long nhap lai: ";
+		cin >> chon;
+
+	}
 	return chon;
 
 }
@@ -56,7 +64,7 @@ void Caidat_switch(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap){
 
 
 
-void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
+void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap,vector<string>SachGiaoTrinh,sach & Giaotrinh){
 
 	switch(Tuychon_chucnang(Dangnhap,Ngdung_dangnhap)){
 
@@ -71,7 +79,7 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 		// Độc giả
 		case 1:{
 			if (Ngdung_dangnhap.ngdung.docgia==1){
-				Switch_docgia(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap);
+				Switch_docgia(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap,SachGiaoTrinh,Giaotrinh);
 				break;
 				// do tuychinh và kiemtra không đổi,
 				// nên ngoài hàm main sẽ tiếp tục chạy hàm này
@@ -159,14 +167,9 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			// nên hàm while sẽ chạy if (!kiemtra)
 			// nên sẽ chạy lại màn hình chính
 
-			// tao hàm?
 			time_t now = time(0);
-			//localtime(&now);
-			/*time_t now = time(0);
-			localtime(&now);
 			char* dangxuat = ctime(&now);
-
-				
+	
 			fstream file("lichsu_dangnhap.txt",ios::app);
 			if(!file.is_open()){
 				cout<<"loi mo file"<<endl;
@@ -174,7 +177,7 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			}
 			file<<Ngdung_dangnhap.Maso<<"	"<<"0	"<<dangxuat;
 
-			file.close();*/
+			file.close();
 			return; 
 	}// hết switch
 }// hết hàm

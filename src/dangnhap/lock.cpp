@@ -95,8 +95,8 @@ bool Docyeucau_mokhoa(){
 		ghi.close();
 		FILE1.close();
 
-		 cout<<biethieu<<"Muon yeu cau mo khoa tai khoan"<<endl;
-		 cout<<"Dong y mo khoa tai khoan (y/n)?"<<endl;
+		 cout<<biethieu<<"	muon yeu cau mo khoa tai khoan"<<endl;
+		 cout<<"Dong y mo khoa tai khoan (y/n)? "<<endl;
 		 cin.ignore();
 		 string y;
 		 if(y!="y"){
@@ -131,8 +131,6 @@ bool Docyeucau_mokhoa(){
 			if (!xoatrong.is_open()) {
 				cout << "Loi mo file";
 			}
-
-		  //them xoa file roi ghi cap nhat lai file
 
 		  mofile.close();
 		  FILE.close();

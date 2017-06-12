@@ -27,22 +27,16 @@ bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 
 				//ghi lai thoi gian dang nhap
 				time_t now = time(0);
-				//localtime(&now);
 				char* dangnhap = ctime(&now);
-				//time_t now = time(0);
-				//localtime(&now);
-				//char* dangnhap = ctime(&now);
+				
+				fstream file("lichsu_dangnhap.txt",ios::app);
+				if(!file.is_open()){
+					cout<<"loi mo file"<<endl;
+					return false;
+				}
+				file<<Ngdung_dangnhap.Maso<<"	"<<"1	"<<dangnhap;
 
-				//// tao ham void?
-				//// hàm bool?
-				//fstream file("lichsu_dangnhap.txt",ios::app);
-				//if(!file.is_open()){
-				//	cout<<"loi mo file"<<endl;
-				//	return false;
-				//}
-				//file<<Ngdung_dangnhap.Maso<<"	"<<"1	"<<dangnhap;
-
-				//file.close();
+				file.close();
 				// kiemtra = true;
 				// break;
 				return true;
@@ -59,9 +53,7 @@ void Dangnhapvao(vector<Nguoidung> &Dangnhap, Nguoidung &Ngdung_dangnhap){
 		kiemtra = Log_in(Dangnhap, Ngdung_dangnhap);
 		if (!kiemtra) {    
 			dem++;
-			cout << "Khong hop le ban co muon thu lai hay "
-					"khong?(y/n) "
-					<< endl;
+			cout << "Khong hop le ban co muon thu lai hay khong?(y/n) "<<endl;
 			string y;
 			getline(cin, y);
 			if (y == "y")
@@ -69,6 +61,7 @@ void Dangnhapvao(vector<Nguoidung> &Dangnhap, Nguoidung &Ngdung_dangnhap){
 			return ;
 		}
 		
+		//kiem tra nguoi dung hien tai dang co chuc nang nao de chuyen sang trang tiep theo chon chuc nang can thuc hien
 		if (!Dulieu_chucnang(Dangnhap, Ngdung_dangnhap)) {
 			cout << "Vai tro cua ban khong hop le";
 			system("pause");
