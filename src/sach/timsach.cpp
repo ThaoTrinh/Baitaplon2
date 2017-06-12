@@ -12,24 +12,21 @@ bool timsach_theoten() {
 		cout << "Loi mo file";
 		return false;
 	}
-
-	/*char tukhoa[50];*/
+	string masach;
 	string tukhoa;
 	string tensach;
-	char *p=0;
-	string bien, bien1, bien2;
+	string bien;
 	int vitri[6];
 	cout << "Nhap tu khoa:" << " ";
 	cin.ignore();
 	getline(cin, tukhoa);
-	/*cin.ignore();
-	cin.getline(tukhoa, 50);*/
-	//Doc file  SachVanHoc.txt
 	
+	//----------------------Doc file SachVanHoc.txt----------------------------------
+	bool timthay=false;
+	cout << "--------------------Danh sach tim duoc----------------------" << endl;
 	while (getline(FILE, bien)) {
 		if (bien.empty())
 			continue;
-
 		int dem = 0;
 		for (int i = 0;i < bien.length();i++) {// lấy vị trí gạch |
 			
@@ -38,92 +35,100 @@ bool timsach_theoten() {
 				dem++;
 			}
 		}
-			cout << vitri[0] << " " << vitri[1];
-		
-			for (int i = vitri[0] + 1; i < vitri[1]; i++)
+		masach = bien.substr(0, vitri[0]);
+		tensach = bien.substr(vitri[0] + 1, (vitri[1] - vitri[0] - 1));
+		for (int i = 0; i < tensach.length(); i++)
+		{
+			for (int j = 0; j < tukhoa.length(); j++)
 			{
-				
-					tensach+= bien[i];
-				
-			}
-			cout << tensach << endl;
-			//string tensachmoi = tensach;
-			/*for (int i = 0; i < tensach.length(); i++)
-			{
-				for (int j = 0; j < tukhoa.length(); j++)
-				{
-					if (tukhoa[j]==tensach[i])
+				if (tukhoa[j]==tensach[i])
+				{	
+					int sosanh = tensach.compare(i, tukhoa.length(), tukhoa);
+					if (sosanh==0)
 					{
-						
-						int sosanh = tensach.compare(i, tukhoa.length(), tukhoa);
-						if (sosanh==0)
-						{
-							cout << tensach << endl;
-							break;
-						}
-						else
-						{
-							continue;
-						}
+						timthay = true;
+						cout <<masach<<" "<< tensach << endl;
+					}
+					else
+					{
+						continue;
 					}
 				}
-			}*/
-			/*p = strstr(tensach, tukhoa);
-			if ((p - tensach) != 0)
-			{
-				cout << tensach << endl;
-			}*/
-		
+			}
+		}
 	}
-	//Doc file SachKhoaHocTuNhien_KyThuat.txt
-	//while (getline(FILE1, bien1)) {
-	//	if (bien1.empty())
-	//		continue;
-	//	for (int i = 0;i < bien1.length();i++) {// lấy vị trí gạch |
-	//		int dem = 0;
-	//		if (bien1[i] == '|') {
-	//			vitri[dem] = i;
-	//			dem++;
-	//		}
-	//		for (int i = vitri[0] + 1; i < vitri[1]; i++)
-	//		{
-	//			for (int j = 0; j < 50; j++)
-	//			{
-	//				tensach[j] = bien1[i];
-	//			}
-	//		}
-	//		
-	//		if ((p - tensach) != 0)
-	//		{
-	//			cout << tensach << endl;
-	//		}
-	//	}
-	//}
-	////Doc file SachGiaoTrinh.txt
-	//while (getline(FILE2, bien2)) {
-	//	if (bien2.empty())
-	//		continue;
-	//	for (int i = 0;i < bien2.length();i++) {// lấy vị trí gạch |
-	//		int dem = 0;
-	//		if (bien2[i] == '|') {
-	//			vitri[dem] = i;
-	//			dem++;
-	//		}
-	//		for (int i = vitri[0] + 1; i < vitri[1]; i++)
-	//		{
-	//			for (int j = 0; j < 50; j++)
-	//			{
-	//				tensach[j] = bien2[i];
-	//			}
-	//		}
-	//		
-	//		p = strstr(tensach, tukhoa);
-	//		if ((p - tensach) != 0)
-	//		{
-	//			cout << tensach << endl;
-	//		}
-	//	}
+	while (getline(FILE1, bien)) {
+		if (bien.empty())
+			continue;
+		int dem = 0;
+		for (int i = 0;i < bien.length();i++) {// lấy vị trí gạch |
 
+			if (bien[i] == '|') {
+				vitri[dem] = i;
+				dem++;
+			}
+		}
+		masach = bien.substr(0, vitri[0]);
+		tensach = bien.substr(vitri[0] + 1, (vitri[1] - vitri[0] - 1));
+		for (int i = 0; i < tensach.length(); i++)
+		{
+			for (int j = 0; j < tukhoa.length(); j++)
+			{
+				if (tukhoa[j] == tensach[i])
+				{
+					int sosanh = tensach.compare(i, tukhoa.length(), tukhoa);
+					if (sosanh == 0)
+					{
+						timthay = true;
+						cout << masach << " " << tensach << endl;
+					}
+					else
+					{
+						continue;
+					}
+				}
+			}
+		}
+	}
+	while (getline(FILE2, bien)) {
+		if (bien.empty())
+			continue;
+		int dem = 0;
+		for (int i = 0;i < bien.length();i++) {// lấy vị trí gạch |
+
+			if (bien[i] == '|') {
+				vitri[dem] = i;
+				dem++;
+			}
+		}
+		masach = bien.substr(0, vitri[0]);
+		tensach = bien.substr(vitri[0] + 1, (vitri[1] - vitri[0] - 1));
+		for (int i = 0; i < tensach.length(); i++)
+		{
+			for (int j = 0; j < tukhoa.length(); j++)
+			{
+				if (tukhoa[j] == tensach[i])
+				{
+					int sosanh = tensach.compare(i, tukhoa.length(), tukhoa);
+					if (sosanh == 0)
+					{
+						timthay = true;
+						cout << masach << " " << tensach << endl;
+					}
+					else
+					{
+						continue;
+					}
+				}
+			}
+		}
+	}
+	
+	
+	
+	if (timthay==false) {
+		cout << "Khong tim thay sach" << endl;
+	}
 		FILE.close();
 		FILE1.close();
 		FILE2.close();
