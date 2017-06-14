@@ -8,3 +8,4 @@
 7|nguyen anh khoa|1611617|3234353|1998|nam|go vap|sinh vien|bk|mt|anhkhoa98|
 8|hvan|1612354|34823478|1998|nu|py|isinhvien|bk|mt|hongvan98|
 9|duong ngoc ha|1614523|221460098|1998|nu|phu yen|sinh vien|bach khoa|may tinh|ngocha@gmail.com|
+10|thuan|1613232|27632|1998|nam|bd|sv|bk|mt|thuanquang|

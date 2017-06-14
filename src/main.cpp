@@ -7,6 +7,8 @@
 #include <Dangki_taikhoan.h>
 #include <Doi_matkhau.h>
 #include <vohieuhoa.h>
+#include <quen_matkhau.h>
+
 using namespace std;
 
 
@@ -47,9 +49,16 @@ int main() {
 					 break;
 					 
 				}
-				
+				case 3:{
+					if(quenmatkhau()){
+						cout<<"Da gui yeu cau thanh cong"<<endl;
+						cout<<"Vui long truy cap mail de nhan thong bao ve mat khau moi"<<endl;
+						system("pause");
+					}
+					break;
+				}
 				// thoát chương trình
-				case 3: return 0;
+				case 4: return 0;
 			}
 		}
 		else {

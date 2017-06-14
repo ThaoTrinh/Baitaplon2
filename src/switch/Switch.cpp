@@ -35,10 +35,6 @@ int Caidat(){
 
 void Caidat_switch(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap){
 
-	// ở đây lại không bị lỗi tốc độ
-	// khi trong switch break thì ra khỏi switch 
-	// rồi chạy lại dòng while
-
 	while(true){
 		switch(Caidat()){
 			case 1:
@@ -67,27 +63,10 @@ void Caidat_switch(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap){
 void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap,vector<string>SachGiaoTrinh,sach & Giaotrinh){
 
 	switch(Tuychon_chucnang(Dangnhap,Ngdung_dangnhap)){
-
-		// do hàm main dựa vào tuychinh và kiemtra
-		// để chạy hàm này
-		// mà hàm này không thay đổi tùy chỉnh
-		// thì khi vào switch 
-		// break và return như nhau???
-
-		// code chỗ này giống nhau
-
-		// Độc giả
 		case 1:{
 			if (Ngdung_dangnhap.ngdung.docgia==1){
 				Switch_docgia(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap,SachGiaoTrinh,Giaotrinh);
-				break;
-				// do tuychinh và kiemtra không đổi,
-				// nên ngoài hàm main sẽ tiếp tục chạy hàm này
-				// nên sẽ hiện ra tùy chọn tiếp
-
-				// lỗi ẩn tốc độ, mỗi lần gọi hàm
-				// nên để while chỗ này và chỗ ngoài không để if
-				// ?????????????????????????????
+				break;			
 			}
 			
 			cout<<"Chuc nang cua ban chua duoc kich hoat."<<endl;

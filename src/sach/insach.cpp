@@ -91,34 +91,7 @@ bool infileKHTN(){
 }
 
 bool infilegiaotrinh(Nguoidung &Ngdung_dangnhap,vector<string>SachGiaoTrinh,sach &Giaotrinh){
-	//system("cls");
-	//ifstream infilesachGiaoTrinh;
-	//	infilesachGiaoTrinh.open("SachGiaoTrinh.txt");
-	//	if (!infilesachGiaoTrinh.is_open()) {
-	//		cout << "Loi mo file cac loai sach";
-	//		return false;
-	//	}
-
-	//	string str1;
-	//	int bien1;
-	//	cout << "Danh sach cac loai sach: " << endl;
-	//	cout << "*-------------------------------------------------*" << endl;
-
-	//	getline(infilesachGiaoTrinh, str1); // Lấy ra dòng đầu tiên
-	//	while (getline(infilesachGiaoTrinh, str1))
-	//	{
-	//		if (str1.empty())
-	//			continue;
-	//		stringstream tach(str1);
-	//		tach >> bien1;
-	//		InDanhSach_Sach_TacGia(str1, bien1);
-	//	}
-	//	infilesachGiaoTrinh.close();
-	//	char q;
-	//	cout << "*-----------------------------------------------------------------*" << endl;
-	//	cout<<"Nhan enter de quay lai"<<endl;
-	//	system("pause");
-	//	return true;
+	
 	system("cls");
 	ifstream infilesachGiaoTrinh;
 	infilesachGiaoTrinh.open("SachGiaoTrinh.txt");

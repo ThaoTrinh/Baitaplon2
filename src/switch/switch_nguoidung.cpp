@@ -6,6 +6,7 @@
 #include <switch.h>
 #include <file_chucnang.h>
 #include <timkiem_nguoidung.h>
+#include <quen_matkhau.h>
 
 using namespace std;
 
@@ -101,19 +102,22 @@ void Switch_quanli(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 			//file_huychucnang();
 			break;
 		case 3:
-			break;
-		case 4:
 			Caidat_switch(Dangnhap,Ngdung_dangnhap);
 			break;
-		case 5:{
+		case 4:{
 			if(!Thongtin_canhan(Ngdung_dangnhap.Maso)){
 				cout<<"Khong tim thay thong tin"<<endl;	
 			}
 			break;
 		}
-		case 6:
+		case 5:
 			cin.ignore();
 			if(!timnguoidung()){
+				cout<<"Khong the lay du lieu"<<endl;
+			}
+			break;
+		case 6:
+			if(!resetmatkhau()){
 				cout<<"Khong the lay du lieu"<<endl;
 			}
 			break;
