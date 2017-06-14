@@ -14,7 +14,7 @@ bool Thongtin_canhan(int & maso){
 	string bien;
 	int bien1;
 	int vitri[12];
-	string bien2, bien3, bien4,bien5, bien6;
+	//string bien2, bien3, bien4,bien5, bien6;
 
 	while(getline(FILE,bien)){
 		if(bien.empty())
@@ -33,11 +33,6 @@ bool Thongtin_canhan(int & maso){
 			}
 		}
 
-		// sao không tính hết rồi cout ra một chỗ,
-		// đừng để chung vô, nhìn rối con mắt
-		// còn tại sao lúc trước cout khoogn được là do
-		// thiếu bit cuối, \0
-		//cout<<dem<<endl;
 		cout<<"Thong tin cua nguoi dung la: "<<endl;
 		cout<<"Ma so: "<<bien1<<endl;
 		cout<<"Ho va ten: ";

@@ -16,6 +16,7 @@ bool timnguoidung(){// không bị lỗi nếu release VS 10
 	}
 
 	string bien;
+	bool timthay = false;
 	while(getline(file,bien)){
 
 		if (bien.empty())
@@ -41,20 +42,27 @@ bool timnguoidung(){// không bị lỗi nếu release VS 10
 			hoten += bien[i];
 			dem1++;
 		}
+		
+		/*char* c = new char[hoten.size() + 1];
+		copy(hoten.begin(),hoten.end(), c);
+		c[hoten.size()] = '\0';
+		string hotenthuong = strlwr(c);*/
 		int maso;
 		if(ten==hoten){
 			maso=so;
-			
+			timthay = true;
+			Thongtin_canhan(maso);
 		}
 		else continue;
-		//cout<<maso;
-		//cin.ignore();
-		/*if(!laythongtin(maso)){
-			cout<<"Khong tim thay nguoi dung"<<endl;
-		}*/
-		Thongtin_canhan(maso);
 		cout<<endl;
 	}
+
+	if (!timthay) {
+		cout<<"Khong tim thay thong tin nguoi dung"<<endl;
+		cout<<"Ban hay thu viet hoa chu cai dau"<<endl;
+		system("pause");
+	}
+
 		file.close();
 		//system("pause");
 		return true;
