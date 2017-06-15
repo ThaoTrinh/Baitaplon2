@@ -56,7 +56,7 @@ void Caidat_switch(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap){
 
 
 
-void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
+void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap, vector<string>SachGiaoTrinh , sach &Giaotrinh){
 
 	switch(Tuychon_chucnang(Dangnhap,Ngdung_dangnhap)){
 
@@ -71,7 +71,7 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 		// Độc giả
 		case 1:{
 			if (Ngdung_dangnhap.ngdung.docgia==1){
-				Switch_docgia(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap);
+				Switch_docgia(Dangki_taikhoan,Dangnhap,Ngdung_dangnhap, SachGiaoTrinh, Giaotrinh);
 				break;
 				// do tuychinh và kiemtra không đổi,
 				// nên ngoài hàm main sẽ tiếp tục chạy hàm này

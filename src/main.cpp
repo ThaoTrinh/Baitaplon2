@@ -23,7 +23,8 @@ int main() {
 	vector<thongtin_nguoidung> Dangki_taikhoan;	// đăng ký tài khoản mới, nên để trong đăng ký
 	vector<Chucnang> Themchucnang;	// thêm chức năng nên để trong chucnang
 	Nguoidung Ngdung_dangnhap;	// người dùng hiện đang đăng nhập
-
+	vector<string>SachGiaoTrinh;
+	sach Giaotrinh;
 	if (!Nhap_dulieu(Dangnhap)) {
 		cout << "Khong nhap duoc du lieu" << endl;
 		system("pause");
@@ -57,7 +58,7 @@ int main() {
 		}
 		else {
 			if (!tuychinh) {	// nếu đã đăng nhập
-				Switch_Chucnang(Dangki_taikhoan,Dangnhap, Ngdung_dangnhap);
+				Switch_Chucnang(Dangki_taikhoan,Dangnhap, Ngdung_dangnhap, SachGiaoTrinh, Giaotrinh);
 			}
 		}   
 	}        // ket thuc while

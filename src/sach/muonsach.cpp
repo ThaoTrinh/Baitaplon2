@@ -1,4 +1,5 @@
-﻿#include <MuonSach.h>
+﻿/*
+#include <MuonSach.h>
 #include <DocFile.h>
 using namespace std;
 void Muonsach() {
@@ -21,13 +22,13 @@ void DuyetYeuCauMuonSach() {
 		cout << "Error!!Vui long nhap dung ki tu !" << endl;
 		getline(cin, y);
 	}
-	if (y == "n") // Tức là không đồng ý và quay trở lại màn hình chính
+	if (y == "n") // T?c là không ð?ng ? và quay tr? l?i màn h?nh chính
 	{
 		kiemtra = false;
 		_getch();
-		//Quay lại màn hình
+		//Quay l?i màn h?nh
 	}
-	if (y == "y")  // Nếu đồng ý thì duyệt yêu cầu mượn sách và người dùng sẽ nhận được thông báo
+	if (y == "y")  // N?u ð?ng ? th? duy?t yêu c?u mý?n sách và ngý?i dùng s? nh?n ðý?c thông báo
 	{
 		fileDuyetYeuCau << y << endl;
 		cout << "Ban da duyet yeu cau muon sach..." << endl;
@@ -51,7 +52,7 @@ void HienThiDanhSachCacLoaiSach() {
 
 	case 1:
 	{
-		//code tìm kiếm theo từ khóa
+		//code t?m ki?m theo t? khóa
 		break;
 
 	}
@@ -181,13 +182,15 @@ bool VietPhieuMuonSach() {
 	ofstream File_PhieuMuonSach;
 	File_PhieuMuonSach.open("Phieu muon sach.txt");
 	File_PhieuMuonSach << "Ngay muon: " << date << "/" << month << "/" << year << endl;
-	File_PhieuMuonSach << "Nguoi muon: " << endl; //Chỗ này là truyền cái tài khoản vào
+	File_PhieuMuonSach << "Nguoi muon: " << endl; //Ch? này là truy?n cái tài kho?n vào
 
 	File_PhieuMuonSach.close();
 	system("cls");
 	cout << "*---------------------PHIEU MUON SACH-----------------------" << endl;
-	cout << "Nguoi muon: " << endl; //Chỗ này là truyền cái tài khoản vào
+	cout << "Nguoi muon: " << endl; //Ch? này là truy?n cái tài kho?n vào
 	cout << "Ngay muon: " << date << "/" << month << "/" << year << endl;
 	cout << "Thoi gian muon toi da la 7 ngay." << endl;
 	return true;
 }
+
+*/

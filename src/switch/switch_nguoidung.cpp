@@ -9,7 +9,7 @@
 
 using namespace std;
 
-void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
+void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap, vector<string>SachGiaoTrinh, sach &Giaotrinh){
 
 	// tiếp tục lỗi tốc độ
 	// break ra khỏi hàm switch
@@ -24,10 +24,11 @@ void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 	while(true) {
 		switch(Tuychon_docgia(Dangnhap,Ngdung_dangnhap)){
 			case 1:
-				Switch_timkiem();
+				Switch_timkiem(Ngdung_dangnhap, SachGiaoTrinh, Giaotrinh);
 				break;
 			case 2: 
-				Nhapphieumuonsach();
+				Switch_timkiem(Ngdung_dangnhap, SachGiaoTrinh, Giaotrinh);
+				/*Nhapphieumuonsach();*/
 				break;
 			case 3:break;
 			case 4:{

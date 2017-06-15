@@ -1,12 +1,12 @@
-0 |Ten sach|Tac gia|So luong
-1 |Toi thay hoa vang tren co xanh|Nguyen Nhat Anh|50|
-2 |Hon Truong Ba da hang thit|XXXX|20|
-3 |Chiec luoc nga|XXXX|15|
-4 |Hom nay toi that tinh|XXXX|6|
-5 |Vo Nhat|Kim Lan|5|
-6 |Vo chong A Phu|To Hoai|10|
-7 |Hai dua tre|Thach Lam|10|
-8 |Hanh phuc mot tang gia|Vu Trong Phung|15|
-9 |Chi Pheo|Nam Cao|6|
-10|De men phieu luu ki|To Hoai|10|
-11|Toi thay Minh hoa vang|QT|11|
+SVH01 |Ten sach|Tac gia|So luong
+SVH02 |Toi thay hoa vang tren co xanh|Nguyen Nhat Anh|50|
+SVH03 |Hon Truong Ba da hang thit|XXXX|20|
+SVH04 |Chiec luoc nga|XXXX|15|
+SVH05 |Hom nay toi that tinh|XXXX|6|
+SVH06 |Vo Nhat|Kim Lan|5|
+SVH07 |Vo chong A Phu|To Hoai|10|
+SVH08 |Hai dua tre|Thach Lam|10|
+SVH09 |Hanh phuc mot tang gia|Vu Trong Phung|15|
+SVH10 |Chi Pheo|Nam Cao|6|
+SVH11 |De men phieu luu ki|To Hoai|10|
+SVH12 |Toi thay Minh hoa vang|QT|11|

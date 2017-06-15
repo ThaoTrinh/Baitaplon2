@@ -23,7 +23,7 @@ int tuychoninsach(){
 int timkiem(){
 	system("cls");
 	cout << "1. Tim kiem theo ten." << endl;
-	cout << "2. Hien thi danh sach theo the loai." << endl;
+	cout << "2. Tim kiem theo the loai." << endl;
 	cout << "3. Quay lai." << endl;
 	cout<<"Lua chon cua ban la: ";
 	int chon;

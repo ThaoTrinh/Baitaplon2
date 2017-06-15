@@ -20,13 +20,13 @@ int Tuychon(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 int Tuychon_docgia(vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap){
 	system("cls");
 	cout<<"Moi ban chon tuy chon"<<endl;
-	cout<<"1.	Tim sach"<<endl;
-	cout<<"2.	Muon sach"<<endl;
-	cout<<"3.	Tra sach"<<endl;
-	cout<<"4.	Xem thong tin ca nhan"<<endl;
-	cout<<"5.	Xem thong bao"<<endl;
-	cout<<"6.	Cai dat"<<endl;
-	cout<<"7.	Quay lai"<<endl;
+	cout<<"1.	Tim va muon sach"<<endl;
+	/*cout<<"2.	Muon sach"<<endl;*/
+	cout<<"2.	Tra sach"<<endl;
+	cout<<"3.	Xem thong tin ca nhan"<<endl;
+	cout<<"4.	Xem thong bao"<<endl;
+	cout<<"5.	Cai dat"<<endl;
+	cout<<"6.	Quay lai"<<endl;
 	cout<<"Lua chon cua ban la: ";
 	int chon;
 	cin>>chon;

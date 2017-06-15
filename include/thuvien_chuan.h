@@ -52,6 +52,9 @@ typedef struct{
 	std::string Taikhoan;
 	Chucnang ngdung;
 } NguoidungDangnhap;
-
+typedef struct {
+	int maso;
+	std::string tensach;
+}sach;
 
 #endif
