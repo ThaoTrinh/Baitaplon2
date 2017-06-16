@@ -1,0 +1,33 @@
+0|Ten sach|Tac Gia|The loai|So Luong
+1|Giai tich 2|Nguyen Dinh Huy|Sach giao trinh|10|
+2|Vat li 1|Nhieu tac gia|Sach giao trinh|10|
+3|Cong nghe CNC|Tran Van Dich|Sach khoa hoc ki thuat|22|
+4|Tu dong hoa trong cong nghiep|Tran Thu Ha|Sach khoa hoc ki thuat|22|
+5|Giao dien nguoi va may HDMI|Tran Thu Ha|Sach khoa hoc ki thuat|16|
+6|Hoa dai cuong|Nguyen Dinh Soa|Sach giao trinh|15|
+7|Vat li 2|XXXX|Sach giao trinh|15|
+8|Toi thay hoa vang tren co xanh|Nguyen Nhat Anh|Sach Van Hoc|50|
+9|Hon Truong Ba da hang thit|XXXX|Sach Van Hoc|20|
+10|Chiec luoc nga|Nguyen Quang Sang|Sach Van Hoc|15|
+11|Hom nay toi that tinh|XXXX|Sach Van Hoc|6|
+12|Giai tich 1|Nguyen Dinh Huy|Sach giao trinh|15|
+13|Thi nghiem vat li|XXXX|Sach giao trinh|10|
+14|Dai so tuyen tinh|Nguyen Huu Hiep|Sach giao trinh|20|
+15|Mo hinh hoa toan hoc|XXXX|Sach giao trinh|20|
+16|Toan roi rac|XXXX|Sach giao trinh|25|
+17|Ky thuat lap trinh|XXXX|Sach giao trinh|25|
+18|Vo Nhat|Kim Lan|Sach Van Hoc|5|
+19|Vo chong A Phu|To Hoai|Sach Van Hoc|10|
+20|Ban thiet ke vi dai|Stephen Hawking|SachKHKT|22|
+21|Vu tru|Carl Sagan|Sach khoa hoc ki thuat|69|
+22|Tu duy nhanh va cham|Daniel Kahneman|Sach khoa hoc ki thuat|48|
+23|Nhung ke xuat chung|Malcolm Gladwell|Sach khoa hoc ki thuat|61|
+24|Vat lieu va thiet bi Nano|Truong Van Tan|Sach khoa hoc ki thuat|49|
+25|Hai dua tre|Thach Lam|Sach Van Hoc|10|
+26|Hanh phuc mot tang gia|Vu Trong Phung|Sach Van Hoc|15|
+27|Chi Pheo|Nam Cao|Sach Van Hoc|6|
+28|De men phieu luu ki|To Hoai|Sach Van Hoc|10|
+29|Mang nhiet|Nguyen Cong Han|Sach khoa hoc ki thuat|12|
+30|Cong nghe cac hop chat vo co|Nguyen Hoa Toan|Sach khoa hoc ki thuat|24|
+31|Vi dieu khien voi lap trinh C|Ngo Dien Tap|Sach khoa hoc ki thuat|42|
+32|Hoa hoc thuc pham|Hoang Kim Anh|Sach khoa hoc ki thuat|24|

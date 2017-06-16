@@ -23,6 +23,7 @@ int main() {
 	Nguoidung Ngdung_dangnhap;	// người dùng hiện đang đăng nhập
 	vector<string>SachGiaoTrinh;
 	sach Giaotrinh;
+
 	if (!Nhap_dulieu(Dangnhap)) {
 		cout << "Khong nhap duoc du lieu" << endl;
 		system("pause");
