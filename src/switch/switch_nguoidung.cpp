@@ -7,7 +7,7 @@
 #include <file_chucnang.h>
 #include <timkiem_nguoidung.h>
 #include <quen_matkhau.h>
-
+#include <thongbao.h>
 using namespace std;
 
 void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>& Dangnhap,Nguoidung & Ngdung_dangnhap,vector<string>SachGiaoTrinh,sach & Giaotrinh){
@@ -39,7 +39,11 @@ void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidung>
 				}
 				break;
 			}
-			case 5:break;
+			case 5:
+				if(!Xemthongbao(Ngdung_dangnhap)){
+					cout<<"Loi file"<<endl;
+				}
+				break;
 			case 6:
 				Caidat_switch(Dangnhap,Ngdung_dangnhap);
 				break;
