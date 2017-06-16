@@ -142,6 +142,7 @@ void Switch_Chucnang(vector<thongtin_nguoidung>& Dangki_taikhoan,vector<Nguoidun
 			break;
 		}
 		case 6:
+			
 			kiemtra=false;
 			// nên hàm while sẽ chạy if (!kiemtra)
 			// nên sẽ chạy lại màn hình chính

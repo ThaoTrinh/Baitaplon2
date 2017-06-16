@@ -1,6 +1,7 @@
 #include <dangnhap.h>
 #include <Docdulieu.h>
 #include <vohieuhoa.h>
+#include <conio.h>
 using namespace std;
 
 bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
@@ -12,14 +13,32 @@ bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 	getline(cin, tendangnhap);
 	cout << "Mat khau: "
 	     << "\t";
-	string matkhau;
-	getline(cin, matkhau);
+	char c=0,matkhau[50];
+    int i = 0;
+  
+    while(1) {
+        c = getch();
+        if (c == 13) {
+            break;
+        } else {
+            matkhau[i++] = c;
+            cout << "*" ;
+        }
+    }
+    matkhau[i] = '\0';
+	//getch();
 	for (int i = 0; i < Dangnhap.size(); i++) {
 
 		if (tendangnhap == Dangnhap[i].Taikhoan) {
 
 			if (matkhau == Dangnhap[i].Matkhau) {
-				cout << "Dang nhap thanh cong" << endl;
+				system("cls");
+				cout<<"*----------------------------------------------------------*"<<endl;
+				cout<<"Xin chao "<<Dangnhap[i].Biethieu<<endl;
+				cout <<"Ban da dang nhap thanh cong" << endl;
+				cout<<"Chao mung den voi he thong LIPRO cua chung toi"<<endl;
+				cout<<"Nhan enter de bat dau phien lam viec tiep theo voi LIPRO"<<endl;
+				cout<<"*-----------------------------------------------------------*"<<endl;
 				Ngdung_dangnhap.Maso     = i + 1;
 				Ngdung_dangnhap.Taikhoan = Dangnhap[i].Taikhoan;
 				Ngdung_dangnhap.Matkhau  = Dangnhap[i].Matkhau;
@@ -53,6 +72,7 @@ void Dangnhapvao(vector<Nguoidung> &Dangnhap, Nguoidung &Ngdung_dangnhap){
 		kiemtra = Log_in(Dangnhap, Ngdung_dangnhap);
 		if (!kiemtra) {    
 			dem++;
+			cout<<endl;
 			cout << "Khong hop le ban co muon thu lai hay khong?(y/n) "<<endl;
 			string y;
 			getline(cin, y);
