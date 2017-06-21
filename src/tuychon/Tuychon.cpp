@@ -8,7 +8,8 @@ int Tuychon(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap) {
 	cout << "Moi ban chon dich vu" << endl;
 	cout << "1.	Dang nhap" << endl;
 	cout << "2.	Dang ki" << endl;
-	cout << "3.	Thoat" << endl;
+	cout << "3.	Quen mat khau" << endl;
+	cout << "4.	Thoat" << endl;
 	cout << "Lua chon cua ban la: ";
 
 	int luachon;
