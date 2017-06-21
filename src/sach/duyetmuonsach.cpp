@@ -137,15 +137,15 @@ void sua_so_luong_sach(NguoiMuon NGUOI_MUON) {
 
 			//Ghi lai dong do trong file sach.txt
 			line = line.replace(k, found - k, amount);
-			ifstream itam("trong.txt", ios::app);
-			ofstream otam("trong.txt", ios::app);
+			ifstream itam("tam.txt", ios::app);
+			ofstream otam("tam.txt", ios::app);
 			otam << line << endl;
 			itam.close();
 			otam.close();
 		}
 		else {
-			ifstream itam("trong.txt", ios::app);
-			ofstream otam("trong.txt", ios::app);
+			ifstream itam("tam.txt", ios::app);
+			ofstream otam("tam.txt", ios::app);
 			otam << line << endl;
 			itam.close();
 			otam.close();
@@ -154,7 +154,7 @@ void sua_so_luong_sach(NguoiMuon NGUOI_MUON) {
 	isach.close();
 	osach.close();
 	remove("sach.txt");
-	rename("trong.txt", "sach.txt");
+	rename("tam.txt", "sach.txt");
 }
 
 string ngay_tra_sach(string& bien) {
@@ -307,8 +307,8 @@ void duyet_muon_sach() {
 			fout2 << line;
 			fin2.close();
 			fout2.close();
-			ifstream fin_tam("trong.txt", ios::app);
-			ofstream fout_tam("trong.txt", ios::in);
+			ifstream fin_tam("tam.txt", ios::app);
+			ofstream fout_tam("tam.txt", ios::in);
 			line = line.replace(line.find(line), line.length(), "");
 			fout_tam << line;      //Luu vao file tam.txt
 			fin_tam.close();
@@ -324,8 +324,8 @@ void duyet_muon_sach() {
 			fout2 << line;     //Ghi vao file thongbaotrasach.txt
 			fout2.close();
 			fin2.close();
-			ifstream itam("trong.txt");
-			ofstream otam("trong.txt");
+			ifstream itam("tam.txt");
+			ofstream otam("tam.txt");
 			line = line.replace(line.find(line), line.length(), "");
 			otam << line;   //Luu vao file tam.txt
 			itam.close();
@@ -339,7 +339,7 @@ void duyet_muon_sach() {
 	fin.close();
 	fout.close();
 	remove("PhieuMuonSach.txt");
-	rename("trong.txt", "PhieuMuonSach.txt");
+	rename("tam.txt", "PhieuMuonSach.txt");
 	system("pause");
 }
 
