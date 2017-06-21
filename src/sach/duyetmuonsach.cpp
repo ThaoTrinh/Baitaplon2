@@ -51,7 +51,7 @@ NguoiMuon Xu_li_dong(string line, NguoiMuon& NGUOI_MUON) {
 		found = line.find(basic, found + 1);
 
 		if (found != std::string::npos) {
-			char str[2];
+			char str[50];
 			for (int i = k; i < found; i++) {
 				str[i - k] = line[i];
 			}
@@ -120,7 +120,7 @@ void sua_so_luong_sach(NguoiMuon NGUOI_MUON) {
 		found = line.find(basic, found + 1);
 
 		if (found != std::string::npos) {
-			char str[10];
+			char str[50];
 			for (int i = k; i < found; i++) {
 				str[i - k] = line[i];
 			}
@@ -155,6 +155,109 @@ void sua_so_luong_sach(NguoiMuon NGUOI_MUON) {
 	osach.close();
 	remove("sach.txt");
 	rename("trong.txt", "sach.txt");
+}
+
+string ngay_tra_sach(string& bien) {
+	string masach;
+	string tensach;
+
+	char ngay_str[4], thang_str[4], nam_str[10];
+	int ngay, thang, nam;
+	int vitri[8];
+	int vitri_gach[8];
+	
+	int dem = 0;
+	for (int i = 0; i < bien.length(); i++)//lay vi tri gach / 
+	{
+		if (bien[i] == '/')
+		{
+			vitri[dem] = i;
+			dem++;
+		}
+	}
+	int dem2 = 0;
+	for (int i = 0; i < bien.length(); i++) //lay vi tri gach |
+	{
+		if (bien[i] == '|')
+		{
+			vitri_gach[dem2] = i;
+			dem2++;
+		
+		}
+	}
+	//tach bien ngay/thang/nam
+	/*ngay_str = bien.substr(vitri_gach[2] + 1, vitri[0] - vitri_gach[2] - 1);*/
+	for (int i = vitri_gach[2] + 1; i < vitri[0]; i++) {
+		ngay_str[i - vitri_gach[2] - 1] = bien[i];
+	}
+
+	
+	/*thang_str = bien.substr(vitri[0] + 1, vitri[1] - vitri[0] - 1);*/
+	for (int i = vitri[0] + 1; i < vitri[1]; i++) {
+		thang_str[i - vitri[0] - 1] = bien[i];
+	}
+	
+	
+	/*nam_str = bien.substr(vitri[1] + 1, vitri_gach[3] - vitri[1] - 1);*/
+	for (int i = vitri[1] + 1; i < vitri_gach[3]; i++) {
+		nam_str[i - vitri[1] - 1] = bien[i];
+	}
+	
+	//doi bien string sang int
+	ngay = atoi(ngay_str);
+	thang = atoi(thang_str); 
+	nam = atoi(nam_str); 
+	string thoi_gian;
+	if (ngay == 31 || ngay == 30)
+	{
+		if (thang == 1)
+		{
+			itoa(nam, nam_str, 10);
+			string year(nam_str);
+			thoi_gian = "28/2/" + year;
+		}
+		if (thang < 12 && thang>2) 
+		{	
+			itoa(nam, nam_str, 10);
+			string year(nam_str);
+			thang += 1;
+			itoa(thang, thang_str, 10);
+			string month(thang_str);
+			thoi_gian = "30/" + month + year;
+		}
+
+		if (thang == 12) {
+			itoa(nam + 1, nam_str, 10);
+			string year(nam_str);
+			thoi_gian = "30/1/" + year;
+		}
+
+	}
+
+	else if (ngay<30)
+	{
+		if (thang == 1 && ngay == 29) {
+			itoa(nam, nam_str, 10);
+			string year(nam_str);
+			thoi_gian = "28/2/" + year;
+		}
+		else if (thang == 12) {
+			itoa(ngay, ngay_str, 10);
+			itoa(nam, nam_str, 10);
+			string day(ngay_str), year(nam_str);
+			thoi_gian = day + "/1/" + year;
+		}
+		else if (thang >= 2 && thang < 12) {
+			itoa(ngay, ngay_str, 10);
+			string day(ngay_str);
+			itoa(nam, nam_str, 10);
+			string year(nam_str);
+			itoa(thang + 1, thang_str, 10);
+			string month(thang_str);
+			thoi_gian = day + "/" + month + "/" + year;
+		}
+	}
+	return thoi_gian;
 }
 
 void duyet_muon_sach() {
@@ -197,7 +300,9 @@ void duyet_muon_sach() {
 			ofstream fout2("thongbaotrasach.txt", ios::app);
 			char amount[5];
 			itoa(NGUOI_MUON.so_luong, amount, 10);
-			line = NGUOI_MUON.ma_so + "|" + NGUOI_MUON.ten_sach + "|" + amount + "|" + NGUOI_MUON.thoi_gian_muon + "|y|";
+			string bien = line;
+			
+			line = NGUOI_MUON.ma_so + "|" + NGUOI_MUON.ten_sach + "|" + amount + "|" + ngay_tra_sach(bien) + "|y|";
 			fout2 << endl;        //Ghi vao file thongbaotrasach.txt
 			fout2 << line;
 			fin2.close();
