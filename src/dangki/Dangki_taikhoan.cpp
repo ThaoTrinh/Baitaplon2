@@ -13,7 +13,7 @@ bool Dangki(vector<Nguoidung>& Dangnhap) {
 	}
 
 	Nguoidung B;
-	int dodai = Dangnhap.size();// do dai cu
+	
 	cout << "Nhap ten tai khoan: ";
 	getline(cin, B.Taikhoan);
 	for (int i = 0; i < Dangnhap.size(); i++) {
@@ -27,13 +27,14 @@ bool Dangki(vector<Nguoidung>& Dangnhap) {
 	}
 	cout << "Nhap mat khau: ";
 	getline(cin, B.Matkhau);
-	cout<<"Nhap biet hieu: ";
+	cout<<"Nhap biet hieu(Vui long nhap biet hieu khong co khoan trong): ";
 	getline(cin,B.Biethieu);
 
-	Dangnhap.push_back(B);// do dai luc nay + 1, nhung lay do dai cu
-	// nguoi dung moi se co so chieu toi la [dodai]
+	Dangnhap.push_back(B);
+	int dodai = Dangnhap.size();
+	Dangnhap[dodai - 1].Maso = Dangnhap[dodai - 2].Maso + 1;
 	FILE << endl;
-	FILE << Dangnhap[dodai - 1].Maso + 1 << "	" << B.Taikhoan << "	"
+	FILE << Dangnhap[dodai - 1].Maso << "	" << B.Taikhoan << "	"
 		<< B.Matkhau<<"	"<<B.Biethieu;
 	FILE.close();
 	return true;
@@ -51,7 +52,7 @@ bool thongtin_dangki(
 		cout << "Loi mo file";
 		return false;
 	}
-	int dodai = Dangnhap.size();// do dai sau khi da them
+	
 	thongtin_nguoidung A;
 	cout << "Ho va ten: ";
 	getline(cin, A.hoten);
@@ -61,8 +62,36 @@ bool thongtin_dangki(
 	getline(cin, A.CMND);
 	cout << "Nam sinh: ";
 	getline(cin, A.namsinh);
-	cout << "Gioi tinh: ";
-	getline(cin, A.gioitinh);
+	cout << "Gioi tinh: "<<endl;
+	cout<<" 1.Nam"<<endl;
+	cout<<" 2.Nu"<<endl;
+	cout<<"Lua chon cua ban la: ";
+	int chon;
+	cin>>chon;
+	while (!cin)
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Loi nhap lua chon. Vui long nhap lai: ";
+		cin >> chon;
+
+	}
+
+	while(chon>2||chon<1){
+		cout<<"Khong co lua chon moi chon lai: ";
+		cin>>chon;
+	}
+
+	switch(chon){
+	case 1:
+		A.gioitinh="Nam";
+		break;
+	case 2:
+		A.gioitinh="Nu";
+		break;
+	}
+
+	cin.ignore();
 	cout << "Dia chi: ";
 	getline(cin, A.diachi);
 	cout<<"Nghe nghiep: ";
@@ -75,9 +104,9 @@ bool thongtin_dangki(
 	getline(cin,A.email);
 
 	Dangki_taikhoan.push_back(A);
-
+	int dodai = Dangnhap.size();
 	FILE << endl;
-	FILE << Dangnhap[dodai - 2].Maso + 1 << "|" << A.hoten <<"|"<<A.MSSV<<"|"<<A.CMND<< "|" << A.namsinh
+	FILE << Dangnhap[dodai - 1].Maso << "|" << A.hoten <<"|"<<A.MSSV<<"|"<<A.CMND<< "|" << A.namsinh
 		<<"|"<<A.gioitinh<< "|" << A.diachi << "|"<<A.nghenghiep<<"|" << A.truong << "|" << A.khoa<<"|"<<A.email<<"|";
 	FILE.close();
 	return true;
@@ -91,7 +120,7 @@ bool Chucnang_dangki(vector<thongtin_nguoidung>& Dangki_taikhoan, Nguoidung& Ngd
 	}
 	int dodai = Dangnhap.size();
 	FILE<<endl;
-	FILE << Dangnhap[dodai - 2].Maso + 1<<"   " << "1    0   0";
+	FILE << Dangnhap[dodai - 1].Maso <<"   " << "1    0   0";
 	FILE.close();
 	return true;
 }
