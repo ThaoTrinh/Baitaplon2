@@ -66,6 +66,15 @@ typedef struct {
 }sSach;
 
 typedef struct {
+	std::string ma_so;
+	std::string biet_hieu;
+	std::string ten_sach;
+	std::string thoi_gian_muon;
+	int so_luong;
+	char status;
+}NguoiMuon;
+
+typedef struct {
 	int date;
 	int month;
 	int year;

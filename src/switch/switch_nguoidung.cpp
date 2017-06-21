@@ -10,6 +10,7 @@
 #include <DuyetMuonSach.h>
 #include <thongbao.h>
 #include <TraSach.h>
+#include <DuyetMuonSach.h>
 using namespace std;
 
 void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan, vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap, vector<string>SachGiaoTrinh, sach &Giaotrinh) {
@@ -65,7 +66,7 @@ void Switch_thuthu(vector<thongtin_nguoidung>& Dangki_taikhoan, vector<Nguoidung
 			Them_Sach();
 			break;
 		case 2:
-			Duyet();
+			duyet_muon_sach();
 			break;
 		case 3:
 			Caidat_switch(Dangnhap, Ngdung_dangnhap);
