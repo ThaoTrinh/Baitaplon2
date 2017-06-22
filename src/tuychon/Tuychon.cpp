@@ -79,7 +79,8 @@ int Tuychon_Quanli(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap) {
 	cout << "4.	Caidat" << endl;
 	cout << "5.	Thong tin ca nhan" << endl;
 	cout << "6.	Tim kiem nguoi dung" << endl;
-	cout << "7.	Thoat" << endl;
+	cout<<	"7.	Reset mat khau"<<endl;
+	cout << "8.	Thoat" << endl;
 	cout << "Lua chon cua ban la: ";
 	int chon;
 	cin >> chon;

@@ -12,6 +12,7 @@
 #include <TraSach.h>
 #include <DuyetMuonSach.h>
 #include <duyettaikhoan.h>
+#include <quen_matkhau.h>
 using namespace std;
 
 void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan, vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap, vector<string>SachGiaoTrinh, sach &Giaotrinh) {
@@ -119,6 +120,11 @@ void Switch_quanli(vector<thongtin_nguoidung>& Dangki_taikhoan, vector<Nguoidung
 			}
 			break;
 		case 7:
+			if(!resetmatkhau()){
+				cout<<"Khong the lay du lieu"<<endl;
+			}
+			break;
+		case 8:
 			return;
 		}
 	}
