@@ -1,4 +1,5 @@
 ﻿#include <TraSach.h>
+#include <nhapphieu.h>
 using namespace std;
 
 void Tra_Sach(Nguoidung &Ngdung_dangnhap) {
@@ -63,13 +64,27 @@ void Tra_Sach(Nguoidung &Ngdung_dangnhap) {
 				if (!file1.is_open()) {
 					cout << "Loi mo file1";
 				}
+
+				fstream file3("phieutrasach.txt", ios::out);
+				if (!file3.is_open()) {
+					cout << "Loi mo file1";
+				}
+
 				string bien;
 				unsigned int dong = 0;
 				while (getline(file, bien)) {
 					dong++;
-					if (dong == dongcanxoa) continue;
-					file1 << bien << endl;
+					if (dong == dongcanxoa) {
+						ThoiGianMuonSach time;
+						ThoiGianMuon(time.date, time.month, time.year);
+					
+						file3 << bien << time.date << "/" << time.month <<"/"<<time.year << "|" << endl;
+					}
+					else {
+						file1 << bien << endl;
+					}
 				}
+				file3.close();
 				file1.close();
 				file.close();
 

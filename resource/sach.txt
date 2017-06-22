@@ -1,5 +1,5 @@
 0|Ten sach|Tac Gia|The loai|So Luong|
-1|Giai tich 2|Nguyen Dinh Huy|Sach giao trinh|3|
+1|Giai tich 2|Nguyen Dinh Huy|Sach giao trinh|13|
 2|Vat li 1|Nhieu tac gia|Sach giao trinh|9|
 3|Cong nghe CNC|Tran Van Dich|Sach khoa hoc ki thuat|22|
 4|Tu dong hoa trong cong nghiep|Tran Thu Ha|Sach khoa hoc ki thuat|22|

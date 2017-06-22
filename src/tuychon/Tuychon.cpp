@@ -53,6 +53,7 @@ int Tuychon_thuthu(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap) {
 	cout << "Moi ban chon tuy chon" << endl;
 	cout << "1.	Them sach" << endl;
 	cout << "2.	Duyet muon sach" << endl;
+	cout << "3.	Duyet tra sach" << endl;
 	cout << "3.	Cai dat" << endl;
 	cout << "4.	Thong tin ca nhan" << endl;
 	cout << "5.	Thoat" << endl;
@@ -75,10 +76,12 @@ int Tuychon_Quanli(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap) {
 	cout << "Moi ban chon tuy chon" << endl;
 	cout << "1.	Duyet tuy chon nguoi dung" << endl;
 	cout << "2.	Xoa tuy chon nguoi dung" << endl;
-	cout << "3.	Caidat" << endl;
-	cout << "4.	Thong tin ca nhan" << endl;
-	cout << "5.	Tim kiem nguoi dung" << endl;
-	cout << "6.	Thoat" << endl;
+	cout << "3.	Duyet tai khoan nguoi dung dang ki" << endl;
+	cout << "4.	Cai dat" << endl;
+	cout << "5.	Thong tin ca nhan" << endl;
+	cout << "6.	Tim kiem nguoi dung" << endl;
+	cout << "7.	Reset mat khau nguoi dung" << endl;
+	cout << "8.	Thoat" << endl;
 	cout << "Lua chon cua ban la: ";
 	int chon;
 	cin >> chon;

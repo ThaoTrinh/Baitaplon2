@@ -11,6 +11,9 @@
 #include <thongbao.h>
 #include <TraSach.h>
 #include <DuyetMuonSach.h>
+#include <duyettaikhoan.h>
+#include <quen_matkhau.h>
+#include <DuyetTraSach.h>
 using namespace std;
 
 void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan, vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap, vector<string>SachGiaoTrinh, sach &Giaotrinh) {
@@ -69,14 +72,17 @@ void Switch_thuthu(vector<thongtin_nguoidung>& Dangki_taikhoan, vector<Nguoidung
 			duyet_muon_sach();
 			break;
 		case 3:
-			Caidat_switch(Dangnhap, Ngdung_dangnhap);
+			duyet_tra_sach();
 			break;
 		case 4:
+			Caidat_switch(Dangnhap, Ngdung_dangnhap);
+			break;
+		case 5:
 			if (!Thongtin_canhan(Ngdung_dangnhap.Maso)) {
 				cout << "Khong tim thay thong tin" << endl;
 			}
 			break;
-		case 5:
+		case 6:
 			return;
 		}
 	}
@@ -98,23 +104,31 @@ void Switch_quanli(vector<thongtin_nguoidung>& Dangki_taikhoan, vector<Nguoidung
 			}
 			//file_huychucnang();
 			break;
-
 		case 3:
+			if (!duyettaikhoan()) {
+				cout << "Loi chuc nang" << endl;
+			}
+			break;
+		case 4:
 			Caidat_switch(Dangnhap, Ngdung_dangnhap);
 			break;
-		case 4: {
+		case 5: {
 			if (!Thongtin_canhan(Ngdung_dangnhap.Maso)) {
 				cout << "Khong tim thay thong tin" << endl;
 			}
 			break;
 		}
-		case 5:
+		case 6:
 			cin.ignore();
 			if (!timnguoidung()) {
 				cout << "Khong the lay du lieu" << endl;
 			}
 			break;
-		case 6:
+		case 7:
+			if (!resetmatkhau()) {
+				cout << "Loi chuc nang" << endl;
+			}
+		case 8:
 			return;
 		}
 	}
