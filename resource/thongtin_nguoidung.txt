@@ -1,4 +1,3 @@
 0 |hoten|CMND|namsinh|gioitinh|diachi|truong|khoa|
 1 |Trinh Thi Thu Thao|1613232|221460076|1998|nu|Phu Yen|sinh vien|Bach Khoa|May tinh|thaotrinhpy98|
 2 |anhkhoa|1611617|1234567|1998|nam|govap|sinh vien|bk|mt|anhkhoa.123|
-3|luonghao|2`13|`13|1998|Nam|bd|sinhvien|bk|mt|qefwdf|

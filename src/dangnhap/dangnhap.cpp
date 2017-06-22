@@ -13,7 +13,7 @@ bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
 	getline(cin, tendangnhap);
 	cout << "Mat khau: "
 	     << "\t";
-	char c=0,matkhau[50];
+	char c=0,matkhau[60];
     int i = 0;
   
     while(1) {
@@ -21,8 +21,16 @@ bool Log_in(vector<Nguoidung>& Dangnhap, Nguoidung& Ngdung_dangnhap) {
         if (c == 13) {
             break;
         } else {
-            matkhau[i++] = c;
-            cout << "*" ;
+			if(c!=8){
+				matkhau[i] = c;
+				i++;
+				cout << "*" ;
+				
+			}
+			else{
+				i--;
+				cout<<"\b \b";
+			}
         }
     }
     matkhau[i] = '\0';

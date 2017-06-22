@@ -1,3 +1,2 @@
 1	thuthao	thao	thaotrinh
 2	anhkhoa	khoa	anhkhoa
-3	hao	hao	hao

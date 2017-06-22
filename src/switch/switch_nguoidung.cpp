@@ -11,6 +11,7 @@
 #include <thongbao.h>
 #include <TraSach.h>
 #include <DuyetMuonSach.h>
+#include <duyettaikhoan.h>
 using namespace std;
 
 void Switch_docgia(vector<thongtin_nguoidung>& Dangki_taikhoan, vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap, vector<string>SachGiaoTrinh, sach &Giaotrinh) {
@@ -89,6 +90,7 @@ void Switch_quanli(vector<thongtin_nguoidung>& Dangki_taikhoan, vector<Nguoidung
 		case 1:
 			if (!file_themchucnang()) {
 				cout << "Loi chuc nang" << endl;
+				system("pause");
 			}
 
 			break;
@@ -99,6 +101,7 @@ void Switch_quanli(vector<thongtin_nguoidung>& Dangki_taikhoan, vector<Nguoidung
 			//file_huychucnang();
 			break;
 		case 3:
+			duyettaikhoan();
 			break;
 		case 4:
 			Caidat_switch(Dangnhap, Ngdung_dangnhap);
