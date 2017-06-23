@@ -54,9 +54,9 @@ int Tuychon_thuthu(vector<Nguoidung>& Dangnhap, Nguoidung & Ngdung_dangnhap) {
 	cout << "1.	Them sach" << endl;
 	cout << "2.	Duyet muon sach" << endl;
 	cout << "3.	Duyet tra sach" << endl;
-	cout << "3.	Cai dat" << endl;
-	cout << "4.	Thong tin ca nhan" << endl;
-	cout << "5.	Thoat" << endl;
+	cout << "4.	Cai dat" << endl;
+	cout << "5.	Thong tin ca nhan" << endl;
+	cout << "6.	Thoat" << endl;
 	cout << "Lua chon cua ban la: ";
 	int chon;
 	cin >> chon;
