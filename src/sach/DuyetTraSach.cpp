@@ -122,7 +122,8 @@ void duyet_tra_sach() {
 		cout << "Loi mo file." << endl;
 	}
 	string line;
-	while (getline(in, line)) {
+	cout << ".* DUYET TRA SACH *." << endl; 
+	while (getline(in, line)) { 
 		int luuvitri[10];
 		int dem = 0;
 		for (int i = 0; i < line.length(); i++) {		//Lay vi tri dau |
@@ -196,7 +197,7 @@ void duyet_tra_sach() {
 			
 			soluong = atoi(ch_soluong);
 
-			cout << ".* DUYET MUON SACH *." << endl;
+			
 			cout << "Biet hieu nguoi dung: ";
 			fstream icheck("dangnhap.txt");
 			string line;
