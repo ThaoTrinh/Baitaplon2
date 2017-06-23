@@ -1,16 +1,15 @@
 ﻿#include <phieumuon.h>
 #include <nhapphieu.h>
-#include <insach.h>
+#include<timsach.h>
 using namespace std;
-
-string DocFileSachGiaoTrinh(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoTrinh,sach &Giaotrinh) {
+string DocFileSachGiaoTrinh(Nguoidung &Ngdung_dangnhap, vector<string>& SachGiaoTrinh, sach &Giaotrinh) {
 	ifstream infilesachGiaoTrinh;
-	infilesachGiaoTrinh.open("SachGiaoTrinh.txt");
+	infilesachGiaoTrinh.open("sach.txt");
 	if (!infilesachGiaoTrinh.is_open()) {
 		cout << "Loi mo file cac loai sach";
 	}
 	string str1;
-	getline(infilesachGiaoTrinh, str1); // Lấy ra dòng đầu tiên
+	getline(infilesachGiaoTrinh, str1); // L?y ra d?ng ð?u tiên
 	while (getline(infilesachGiaoTrinh, str1))
 	{
 		if (str1.empty())
@@ -19,10 +18,8 @@ string DocFileSachGiaoTrinh(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoT
 	}
 	infilesachGiaoTrinh.close();
 
-	//Phần code này dùng thực hiện chức năng khi người dùng chọn số thứ tự sách ( ví dụ như thứ i )
-	//Thì sẽ getline dòng thứ i trong file sách đó
-	//Tiếp theo là sẽ đọc phần tên sách trong sòng thứ i để hiển thị ra màn hình
-	float selection = LuaChonSach(Ngdung_dangnhap,Giaotrinh);
+
+	float selection = LuaChonSach(Ngdung_dangnhap, Giaotrinh);
 	int bien;
 	string str2 = SachGiaoTrinh[int(selection) - 1];
 	int index[5];
@@ -39,15 +36,14 @@ string DocFileSachGiaoTrinh(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoT
 	}
 	return ten_sach;
 }
-
-string tenFileSachGiaoTrinh(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoTrinh,sach &Giaotrinh) {
+string tenFileSachGiaoTrinh(Nguoidung &Ngdung_dangnhap, vector<string>& SachGiaoTrinh, sach &Giaotrinh) {
 	ifstream infilesachGiaoTrinh;
-	infilesachGiaoTrinh.open("SachGiaoTrinh.txt");
+	infilesachGiaoTrinh.open("sach.txt");
 	if (!infilesachGiaoTrinh.is_open()) {
 		cout << "Loi mo file cac loai sach";
 	}
 	string str1;
-	getline(infilesachGiaoTrinh, str1); // Lấy ra dòng đầu tiên
+	getline(infilesachGiaoTrinh, str1); // L?y ra d?ng ð?u tiên
 	while (getline(infilesachGiaoTrinh, str1))
 	{
 		if (str1.empty())
@@ -56,9 +52,9 @@ string tenFileSachGiaoTrinh(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoT
 	}
 	infilesachGiaoTrinh.close();
 
-	//Phần code này dùng thực hiện chức năng khi người dùng chọn số thứ tự sách ( ví dụ như thứ i )
-	//Thì sẽ getline dòng thứ i trong file sách đó
-	//Tiếp theo là sẽ đọc phần tên sách trong sòng thứ i để hiển thị ra màn hình
+	//Ph?n code này dùng th?c hi?n ch?c nãng khi ngý?i dùng ch?n s? th? t? sách ( ví d? nhý th? i )
+	//Th? s? getline d?ng th? i trong file sách ðó
+	//Ti?p theo là s? ð?c ph?n tên sách trong s?ng th? i ð? hi?n th? ra màn h?nh
 	float selection = Giaotrinh.maso;
 	int bien;
 	string str2 = SachGiaoTrinh[selection - 1];
@@ -76,11 +72,9 @@ string tenFileSachGiaoTrinh(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoT
 	}
 	return ten_sach;
 }
-void PhieuMuon(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoTrinh,sach &Giaotrinh) {
-	//vector<string>SachGiaoTrinh;
+void PhieuMuon(Nguoidung &Ngdung_dangnhap, vector<string>& SachGiaoTrinh, sach &Giaotrinh) {
 	char y;
-	//string s = DocFileSachGiaoTrinh(SachGiaoTrinh);
-	cout << "Co phai ban muon muon sach: " << DocFileSachGiaoTrinh(Ngdung_dangnhap,SachGiaoTrinh,Giaotrinh) << "	(y/n)" << endl;
+	cout << "Co phai ban muon muon sach: " << DocFileSachGiaoTrinh(Ngdung_dangnhap, SachGiaoTrinh, Giaotrinh) << "	(y/n)" << endl;
 	cout << "(Neu dung thi vui long nhan phim y, hoac nhan phim n de quay lai chon sach khac)" << endl;
 	cin.ignore();
 	cin >> y;
@@ -88,18 +82,17 @@ void PhieuMuon(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoTrinh,sach &Gi
 	{
 	case 'y':
 	{
-		Nhapphieumuonsach(Ngdung_dangnhap,SachGiaoTrinh,Giaotrinh);
+		Nhapphieumuonsach(Ngdung_dangnhap, SachGiaoTrinh, Giaotrinh);
 		break;
 	}
 	case 'n':
 	{
-		infilegiaotrinh(Ngdung_dangnhap,SachGiaoTrinh,Giaotrinh);
 		break;
 	}
 	}
 }
 
-float LuaChonSach(Nguoidung &Ngdung_dangnhap,sach &Giaotrinh) {
+float LuaChonSach(Nguoidung &Ngdung_dangnhap, sach &Giaotrinh) {
 	float selection = 0;
 	cout << "Nhap so thu tu sach ma ban muon muon doc: ";
 	cin >> selection;
@@ -119,17 +112,17 @@ float LuaChonSach(Nguoidung &Ngdung_dangnhap,sach &Giaotrinh) {
 		cin >> selection;
 	}
 	//nhapvao=selection;
-	Giaotrinh.maso=selection;
+	Giaotrinh.maso = selection;
 	return selection;
 }
 
-bool LuaChonMuonSach(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoTrinh,sach &Giaotrinh) {
+bool LuaChonMuonSach(Nguoidung &Ngdung_dangnhap, vector<string>& SachGiaoTrinh, sach &Giaotrinh) {
 	//vector<string> SachGiaoTrinh;
-	switch (Select(Ngdung_dangnhap,SachGiaoTrinh,Giaotrinh))
+	switch (Select(Ngdung_dangnhap, SachGiaoTrinh, Giaotrinh))
 	{
 	case 1:
 	{
-		PhieuMuon(Ngdung_dangnhap,SachGiaoTrinh,Giaotrinh);
+		PhieuMuon(Ngdung_dangnhap, SachGiaoTrinh, Giaotrinh);
 		//DocFileSachGiaoTrinh(SachGiaoTrinh);
 		break;
 	}
@@ -141,7 +134,7 @@ bool LuaChonMuonSach(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoTrinh,sa
 	return true;
 }
 
-int Select(Nguoidung &Ngdung_dangnhap,vector<string>& SachGiaoTrinh,sach &Giaotrinh){
+int Select(Nguoidung &Ngdung_dangnhap, vector<string>& SachGiaoTrinh, sach &Giaotrinh) {
 	int select;
 	cout << "Nhan phim 1 neu ban muon muon sach." << endl;
 	cout << "Nhan phim 2 de quay lai." << endl;

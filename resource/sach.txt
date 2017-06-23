@@ -1,0 +1,101 @@
+0|Ten sach|Tac Gia|The loai|So Luong|
+1|Giai tich 2|Nguyen Dinh Huy|Sach giao trinh|15|
+2|Vat li 1|Nhieu tac gia|Sach giao trinh|9|
+3|Cong nghe CNC|Tran Van Dich|Sach khoa hoc ki thuat|22|
+4|Tu dong hoa trong cong nghiep|Tran Thu Ha|Sach khoa hoc ki thuat|22|
+5|Giao dien nguoi va may HDMI|Tran Thu Ha|Sach khoa hoc ki thuat|16|
+6|Hoa dai cuong|Nguyen Dinh Soa|Sach giao trinh|15|
+7|Vat li 2|Nhieu tac gia|Sach giao trinh|15|
+8|Toi thay hoa vang tren co xanh|Nguyen Nhat Anh|Sach Van Hoc|50|
+9|Hon Truong Ba da hang thit|Luu Quang Vu|Sach Van Hoc|18|
+10|Chiec luoc nga|Nguyen Quang Sang|Sach Van Hoc|15|
+11|Hom nay toi that tinh|Ha Vu|Sach Van Hoc|6|
+12|Giai tich 1|Nguyen Dinh Huy|Sach giao trinh|17|
+13|Thi nghiem vat li|Nhieu tac gia|Sach giao trinh|10|
+14|Dai so tuyen tinh|Nguyen Huu Hiep|Sach giao trinh|20|
+15|Mo hinh hoa toan hoc|Nhieu tac gia|Sach giao trinh|20|
+16|Toan roi rac|Nhieu tac gia|Sach giao trinh|25|
+17|Ky thuat lap trinh|Nhieu tac gia|Sach giao trinh|25|
+18|Vo Nhat|Kim Lan|Sach Van Hoc|5|
+19|Vo chong A Phu|To Hoai|Sach Van Hoc|10|
+20|Ban thiet ke vi dai|Stephen Hawking|Sach khoa hoc ki thuat|22|
+21|Vu tru|Carl Sagan|Sach khoa hoc ki thuat|69|
+22|Tu duy nhanh va cham|Daniel Kahneman|Sach khoa hoc ki thuat|48|
+23|Nhung ke xuat chung|Malcolm Gladwell|Sach khoa hoc ki thuat|61|
+24|Vat lieu va thiet bi Nano|Truong Van Tan|Sach khoa hoc ki thuat|49|
+25|Hai dua tre|Thach Lam|Sach Van Hoc|10|
+26|Hanh phuc mot tang gia|Vu Trong Phung|Sach Van Hoc|15|
+27|Chi Pheo|Nam Cao|Sach Van Hoc|6|
+28|De men phieu luu ki|To Hoai|Sach Van Hoc|10|
+29|Mang nhiet|Nguyen Cong Han|Sach khoa hoc ki thuat|12|
+30|Cong nghe cac hop chat vo co|Nguyen Hoa Toan|Sach khoa hoc ki thuat|24|
+31|Vi dieu khien voi lap trinh C|Ngo Dien Tap|Sach khoa hoc ki thuat|42|
+32|Hoa hoc thuc pham|Hoang Kim Anh|Sach khoa hoc ki thuat|24|
+33|Nghe thuat bai tri cua nguoi Nhat|Marle Kondo|Sach khoa hoc ki thuat|15|
+34|Vuong tran trui|Desmond Morris|Sach khoa hoc ki thuat|12|
+35|So tay noi khoa|Harrison|Sach y hoc|10|
+36|Cam bay nguoi|Vu Trong Phung|Sach Van Hoc|20|
+37|Tu chua lanh|Nhieu tac gia|Sach y hoc|20|
+38|Thuat truong sinh truong tho|Bien Thi Trung|Sach y hoc|16|
+39|Vu tru va hoa sen|Trinh Xuan Thuan|Sach khoa hoc ki thuat|20|
+40|Cuoc doi dai lam|Chu Lai|Sach Van Hoc|30|
+41|Leu Chong|Ngo Tat To|Sach Van Hoc|16|
+42|Bi An Cua Nhan Loai|Minh Anh|Sach khoa hoc ki thuat|12|
+43|Canh tay trai cua sep|Alpha Books Bien soan|Sach tam li|5|
+44|Thanh cong tot dinh|Brian Tracy|Sach tam li|26|
+45|Linh hon cua tien|Lynne Twest|Sach tam li|12|
+46|Song dang cap|Lynda Mclean|Sach tam li|45|
+47|Nhung buoc don gian den uoc mo|Steven K.Scott||Sach tam li|44|
+48|Duong sinh va tri benh|Cat Bo|Sach y hoc|19|
+49|Noi buon chien tranh|Bao Ninh|Sach Van Hoc|15|
+50|Doi viet van cua toi|Nguyen Hien Le|Sach Van Hoc|44|
+51|Khac no|To Hoai|Sach Van Hoc|45|
+52|Nguon goc cua muon loai|Charles Darwin|Sach khoa hoc ki thuat|41|
+53|The gioi bi quy am|Carl Sagan|Sach khoa hoc ki thuat|25|
+54|Khi cong kinh lac|Si Dinh|Sach y hoc|42|
+55|Trung so doc dac|Vu Trong Phung|Sach Van Hoc|26|
+56|Nghe thuat va Dia li|Leonard Shiain|Sach khoa hoc ki thuat|42|
+57|Chuyen vui vat li|Nhieu tac gia|Sach khoa hoc ki thuat|41|
+58|Hieu ve trai tim|Minh Niem|Sach tam li|42|
+59|Tat den|Ngo Tat To|Sach Van Hoc|90|
+60|Truyen Kieu|Nguyen Du|Sach Van Hoc|60|
+61|Giot le trong hon|Kim Huyn Hee|Sach hoi ky|42|
+62|Ho so quyen luc Younger Pitt|Michael Duffy|Sach lich su chinh tri|44|
+63|Thuo mo lam van si|Nguyen Thuy Long|Sach hoi ky|47|
+64|78 cau hoi ve nha lanh dao|Chris Clarke Epstein|Sach kinh te|45|
+65|Tuong Navarre voi tran Dien Bien Phu|Jean Pouge|Sach lich su chinh tri|42|
+66|Bac si tot nhat la chinh minh|Hong Chieu Quang|Sach y hoc|12|
+67|Mat ma Do Thai|Perry Stone|Sach van hoc ton giao|15|
+68|Cong chua toc may|Walt Disney|Sach Van Hoc|16|
+69|8 to chat tri tue quyet dinh cuoc doi nguoi dan ong|Phan Quoc Bao|Sach tam li|58|
+70|8 to chat tri tue quyet dinh cuoc doi nguoi phu nu|Ma Van Ngan|Sach tam li|58|
+71|Thuat tu tuong|Thu Giang - Nguyen Duy Can|Sach tam li|42|
+72|De ken thanh buom|Gordon F. Dveirin - Joan Z. Borysenko|Sach tam li|25|
+73|Nhung cuoc chinh phat cua Alexander Dai De|Arrian|Sach lich su chinh tri|42|
+74|Than thoai Sisyphus|Albert Camus|Sach khoa hoc ki thuat|12|
+75|Kinh te hoc|David Begg - S. Fischer - R. Dorbusch|Sach kinh te|45|
+76|The gioi cong|David M. Smick|Sach kinh te|42|
+77|Nen Kinh te cam on|Gary Vaynerchuk|Sach kinh te|79|
+78|Muu hen ke ban noi cong so|Alpha Books biên soan|Sach tam li|45|
+79|Lut viec phai lam sao|Kerry Gleeson|Sach tam li|35|
+80|Bon mua cuoc song|Jim Rohn|Sach tam li|12|
+81|Toc do cua niem tin|Stephen R. Covey|Sach tam li|60|
+82|Dau tu vao vang|Jonathan Spall|Sach kinh te|36|
+83|Nhieu cach song|Nguyen Quynh Trang|Sach Van Hoc|39|
+84|Hoa than|Franz Kafka|Sach Van Hoc|61|
+85|Cao diem cuoi cung|Huu Mai|Sach hoi ki|45|
+86|Lee Kun Hee - Nhung lua chon chien luoc va ki tich Samsung|Ji Pyeong Gil|41|
+87|Phuong phap tan duong sinh|Sakurazawa Nyoichi|Sach y hoc|45|
+88|Co kim y an|Hoang Duy Tan|Sach y hoc|33|
+89|Gay me hoi suc trong San khoa|Ho Kha Canh|Sach y hoc|47|
+90|Cuoc cach mang cong nghiem lan III|Jeremy Rifkin|Sach khoa hoc ki thuat|40|
+91|Phuong phap dang sao giai han|Cu Sy Tue Ung|Sach van hoa ton giao|45|
+92|Thien dao|Alan Watts|Sach van hoa ton giao|46|
+93|Bai hoc cua lich su|Will - Ariel Durant|Sach lich su chinh tri|45|
+94|Nha giao ho Khong|Nguyen Hien Le|Sach hoi ki|42|
+95|Mot cach tiep can van hoa|Nguyen Hien Le|Sach van hoa ton giao|62|
+96|Guong Danh nhan|Nguyen Hien Le|Sach tam li|28|
+97|Van Minh Dai Viet|Nguyen Duy Hinh|Sach van hoa ton giao|47|
+98|Tranh Dan gian Viet Nam|Nguyen Ba Van|Sach van hoa ton giao|42|
+99|Tran phuc Viet Nam|Doan Thi Tinh|Sach van hoa ton giao|36|
+100|Guong kien nhan|Nguyen Hien Le|Sach tam li|100|

@@ -12,10 +12,9 @@
 #include <limits>
 #include <conio.h>
 #include <iomanip>
-
+#include <time.h>
 extern bool kiemtra;
 extern bool tuychinh;
-//extern int nhapvao;
 
 typedef struct{
 	int docgia;
@@ -57,4 +56,27 @@ typedef struct{
 	int maso;
 	std::string tensach;
 }sach;
+
+typedef struct {
+	int STT;
+	std::string Ten_Sach;
+	std::string Tac_Gia;
+	std::string The_Loai;
+	int So_Luong;
+}sSach;
+
+typedef struct {
+	std::string ma_so;
+	std::string biet_hieu;
+	std::string ten_sach;
+	std::string thoi_gian_muon;
+	int so_luong;
+	char status;
+}NguoiMuon;
+
+typedef struct {
+	int date;
+	int month;
+	int year;
+}ThoiGianMuonSach;
 #endif
