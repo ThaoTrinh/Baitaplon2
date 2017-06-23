@@ -25,8 +25,12 @@ bool Dangki(vector<Nguoidung>& Dangnhap) {
 			break;
 		}
 	}
-	cout << "Nhap mat khau: ";
-	getline(cin, B.Matkhau);
+
+	srand(time(NULL));
+		for(int i=0;i<5;i++){
+			B.Matkhau +=rand()%26+97;
+		}
+
 	cout << "Nhap biet hieu(Vui long nhap biet hieu khong co khoan trong): ";
 	getline(cin, B.Biethieu);
 
@@ -52,7 +56,16 @@ bool thongtin_dangki(
 		cout << "Loi mo file";
 		return false;
 	}
-
+	fstream duyet("duyettaikhoan.txt", ios::out | ios::app);
+	if (!duyet.is_open()) {
+		cout << "Loi mo file";
+		return false;
+	}
+	fstream ten("ten.txt", ios::out | ios::app);
+	if (!duyet.is_open()) {
+		cout << "Loi mo file";
+		return false;
+	}
 	thongtin_nguoidung A;
 	cout << "Ho va ten: ";
 	getline(cin, A.hoten);
@@ -108,6 +121,10 @@ bool thongtin_dangki(
 	FILE << endl;
 	FILE << Dangnhap[dodai - 1].Maso << "|" << A.hoten << "|" << A.MSSV << "|" << A.CMND << "|" << A.namsinh
 		<< "|" << A.gioitinh << "|" << A.diachi << "|" << A.nghenghiep << "|" << A.truong << "|" << A.khoa << "|" << A.email << "|";
+
+	duyet<<Dangnhap[dodai - 1].Maso << "|" << A.hoten<<"|"<<endl;
+	ten<<Dangnhap[dodai - 1].Maso << "|" << A.hoten<<"|"<<endl;
+	duyet.close();
 	FILE.close();
 	return true;
 }
@@ -142,6 +159,7 @@ void Dangki_main(vector<thongtin_nguoidung>& Dangki_taikhoan, Nguoidung& Ngdung_
 	}
 
 	Chucnang_dangki(Dangki_taikhoan, Ngdung_dangnhap, Dangnhap);
-	cout << "Ban da duoc dang ki vao he thong" << endl;
+	cout << "Ban da duoc dang ki vao he thong vui long cho xet duyet cua nguoi quan li."<<endl;
+	cout<<"Vui long check mail de nhan thong bao ve mat khau" << endl;
 	system("pause");
 }

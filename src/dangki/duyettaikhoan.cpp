@@ -50,6 +50,7 @@ bool duyettaikhoan() {
 			xoachucnang(maso);
 			xoadangnhap(maso);
 			xoathongtin(maso);
+			xoaten(maso);
 			xoaduyet(maso);
 			cout << "Nguoi dung khong duoc dang ki vao he thong" << endl;
 			system("pause");
@@ -237,3 +238,45 @@ bool xoaduyet(int maso) {
 	return true;
 }
 
+bool xoaten(int maso) {
+	fstream file("ten.txt");
+	if (!file.is_open()) {
+		cout << "Loi mo file";
+		return false;
+	}
+
+	fstream file1("trong.txt");
+	if (!file1.is_open()) {
+		cout << "Loi mo file";
+		return false;
+	}
+
+	string str;
+	while (getline(file, str)) {
+		if (str.empty()) continue;
+		int ms;
+		stringstream tach(str);
+		tach >> ms;
+		if (ms != maso) {
+			file1 << str << endl;
+		}
+	}
+	file1.close();
+	file.close();
+	string bien;
+	fstream file2("trong.txt");
+	ofstream xoa("ten.txt");
+	fstream nhap("ten.txt");
+	if (!nhap.is_open()) {
+		cout << "Loi mo file";
+		return false;
+	}
+	while (getline(file2, bien)) {
+		nhap << bien << endl;
+	}
+	ofstream xoa1("trong.txt");
+	nhap.close();
+	file2.close();
+
+	return true;
+}

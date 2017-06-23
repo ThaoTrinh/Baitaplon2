@@ -1,11 +1,3 @@
-1	thuthao	thao	thaotrinh
-2	anhkhoa	khoa	anhkhoa
-3	thuan	thuan		quangthuan
-4	hao 	luonghao	luonghao
-5	minh	1234		huuminh
-6	nhathoa	1234	hoa
-7	khoabiham	1234	khoaham
-8	van	van	van
-9	ngocha	1234	
-10	hao123	hao123	haohao
-11	hao456	hao456	hao456
+1	thuthao	thuthao	thaotrinh
+2	HuuMinh	minh	Minh
+3	LuuQuangThuan	thuan	Thuan
