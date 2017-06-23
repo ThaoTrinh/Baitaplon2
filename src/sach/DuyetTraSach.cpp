@@ -122,6 +122,7 @@ void duyet_tra_sach() {
 		cout << "Loi mo file." << endl;
 	}
 	string line;
+	cout << ".* DUYET MUON SACH *." << endl;
 	while (getline(in, line)) {
 		int luuvitri[10];
 		int dem = 0;
@@ -196,7 +197,6 @@ void duyet_tra_sach() {
 			
 			soluong = atoi(ch_soluong);
 
-			cout << ".* DUYET MUON SACH *." << endl;
 			cout << "Biet hieu nguoi dung: ";
 			fstream icheck("dangnhap.txt");
 			string line;
@@ -217,7 +217,8 @@ void duyet_tra_sach() {
 			cin >> choice;
 			if (choice == 'y') {
 				so_sach(tensach, soluong);
-				cout << "Duyet thanh cong." << endl;
+				cout << "Duyet thanh cong !!!" << endl;
+				cout << endl;
 			}
 			else {
 				cout << "Ban khong dong y duyet." << endl;

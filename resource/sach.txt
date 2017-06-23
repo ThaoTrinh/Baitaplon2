@@ -6,7 +6,7 @@
 5|Giao dien nguoi va may HDMI|Tran Thu Ha|Sach khoa hoc ki thuat|16|
 6|Hoa dai cuong|Nguyen Dinh Soa|Sach giao trinh|15|
 7|Vat li 2|Nhieu tac gia|Sach giao trinh|15|
-8|Toi thay hoa vang tren co xanh|Nguyen Nhat Anh|Sach Van Hoc|50|
+8|Toi thay hoa vang tren co xanh|Nguyen Nhat Anh|Sach Van Hoc|38|
 9|Hon Truong Ba da hang thit|Luu Quang Vu|Sach Van Hoc|18|
 10|Chiec luoc nga|Nguyen Quang Sang|Sach Van Hoc|15|
 11|Hom nay toi that tinh|Ha Vu|Sach Van Hoc|6|
@@ -84,7 +84,7 @@
 83|Nhieu cach song|Nguyen Quynh Trang|Sach Van Hoc|39|
 84|Hoa than|Franz Kafka|Sach Van Hoc|61|
 85|Cao diem cuoi cung|Huu Mai|Sach hoi ki|45|
-86|Lee Kun Hee - Nhung lua chon chien luoc va ki tich Samsung|Ji Pyeong Gil|41|
+86|Lee Kun Hee - Nhung lua chon chien luoc va ki tich Samsung|Ji Pyeong Gil|Sach kinh te|41|
 87|Phuong phap tan duong sinh|Sakurazawa Nyoichi|Sach y hoc|45|
 88|Co kim y an|Hoang Duy Tan|Sach y hoc|33|
 89|Gay me hoi suc trong San khoa|Ho Kha Canh|Sach y hoc|47|

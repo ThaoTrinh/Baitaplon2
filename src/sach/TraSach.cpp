@@ -6,7 +6,7 @@ void Tra_Sach(Nguoidung &Ngdung_dangnhap) {
 	system("cls");
 	int tinh = 0;
 	ifstream DocFileTraSach;
-	DocFileTraSach.open("thongbaotrasach.txt", ios::in);
+	DocFileTraSach.open("thongbaotrasach.txt", ios::out);
 	if (!DocFileTraSach.is_open())
 	{
 		cout << "Khong tim thay du lieu..." << endl;
@@ -65,7 +65,7 @@ void Tra_Sach(Nguoidung &Ngdung_dangnhap) {
 					cout << "Loi mo file1";
 				}
 
-				fstream file3("phieutrasach.txt", ios::out);
+				fstream file3("phieutrasach.txt", ios::app);
 				if (!file3.is_open()) {
 					cout << "Loi mo file1";
 				}

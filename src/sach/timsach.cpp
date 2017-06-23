@@ -53,7 +53,8 @@ bool timsach_theoten(Nguoidung &Ngdung_dangnhap, vector<string>SachGiaoTrinh, sa
 					if (sosanh == 0)
 					{
 						timthay = true;
-						cout << masach << setfill(' ') << setw(60) << tensach << endl;
+						cout << masach << setfill(' ') << setw(65-masach.length()) << tensach << endl;
+						break;
 					}
 					else
 					{
@@ -61,6 +62,7 @@ bool timsach_theoten(Nguoidung &Ngdung_dangnhap, vector<string>SachGiaoTrinh, sa
 					}
 				}
 			}
+			break;
 		}
 	}
 	cout << "*--------------------------------------------------------------------------------------------------*" << endl;
@@ -124,7 +126,8 @@ bool timsach_theloai(Nguoidung &Ngdung_dangnhap, vector<string>SachGiaoTrinh, sa
 					if (sosanh == 0)
 					{
 						timthay = true;
-						cout << masach << setfill(' ') << setw(60) << tensach_tl << setfill(' ') << setw(30) << theloai << endl;
+						cout << masach << setfill(' ') << setw(65-masach.length()) << tensach_tl << setfill(' ') << setw(30) << theloai << endl;
+	
 					}
 					else
 					{
@@ -132,6 +135,7 @@ bool timsach_theloai(Nguoidung &Ngdung_dangnhap, vector<string>SachGiaoTrinh, sa
 					}
 				}
 			}
+
 		}
 	}
 	cout << "*--------------------------------------------------------------------------------------------------*" << endl;
