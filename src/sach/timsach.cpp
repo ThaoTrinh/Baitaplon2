@@ -54,7 +54,7 @@ bool timsach_theoten(Nguoidung &Ngdung_dangnhap, vector<string>SachGiaoTrinh, sa
 					{
 						timthay = true;
 						cout << masach << setfill(' ') << setw(60-masach.length()) << tensach << endl;
-						
+						break;
 					}
 					else
 					{
@@ -62,6 +62,7 @@ bool timsach_theoten(Nguoidung &Ngdung_dangnhap, vector<string>SachGiaoTrinh, sa
 					}
 				}
 			}
+		break;
 		}
 		
 	}
