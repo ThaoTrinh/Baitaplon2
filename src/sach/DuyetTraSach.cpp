@@ -122,7 +122,7 @@ void duyet_tra_sach() {
 		cout << "Loi mo file." << endl;
 	}
 	string line;
-	cout << ".* DUYET MUON SACH *." << endl;
+	cout << ".* DUYET TRA SACH *." << endl;
 	while (getline(in, line)) {
 		int luuvitri[10];
 		int dem = 0;
@@ -184,7 +184,7 @@ void duyet_tra_sach() {
 			phat(id, tensach);
 			
 		}
-		else if (atoi(month) > atoi(dmonth)) {
+		else if (atoi(month) > atoi(dmonth)&& atoi(year) == atoi(dyear)) {
 			
 			phat(id, tensach);
 
